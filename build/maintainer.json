@@ -1403,6 +1403,9 @@
     "/cnljxh/price/:id?": [
         "nczitzk"
     ],
+    "/cntheory/paper/:id?": [
+        "nczitzk"
+    ],
     "/cntv/:column": [
         "WhoIsSure",
         "Fatpandac"
@@ -3890,9 +3893,15 @@
     "/jin10/topic/:id": [
         "miles170"
     ],
-    "/jinse/catalogue/:caty": [],
-    "/jinse/lives": [],
-    "/jinse/timeline": [],
+    "/jinse/:category?": [
+        "nczitzk"
+    ],
+    "/jinse/lives/:category?": [
+        "nczitzk"
+    ],
+    "/jinse/timeline/:category?": [
+        "nczitzk"
+    ],
     "/jisilu/:category?/:sort?/:day?": [
         "nczitzk"
     ],
@@ -3974,6 +3983,9 @@
         "Dectinc",
         "DIYgod"
     ],
+    "/keepass": [
+        "TonyRL"
+    ],
     "/kemono/:source?/:id?": [
         "nczitzk"
     ],
@@ -4028,6 +4040,9 @@
         "Rongronggg9"
     ],
     "/lagou/jobs/:position/:city": [],
+    "/laimanhua/:id": [
+        "TonyRL"
+    ],
     "/lang/live/room/:id": [
         "MittWillson"
     ],
@@ -4498,6 +4513,9 @@
     ],
     "/mrdx/today": [
         "Dustin-Jiang"
+    ],
+    "/mrm/:category?": [
+        "TonyRL"
     ],
     "/mubu/explore/:category?/:title?": [],
     "/muchong/:id/:type?/:sort?": [],
@@ -5720,6 +5738,12 @@
     ],
     "/scmp/:category_id": [
         "proletarius101"
+    ],
+    "/scmp/coronavirus": [
+        "DIYgod"
+    ],
+    "/scmp/topics/:topic": [
+        "TonyRL"
     ],
     "/scnu/cs/match": [
         "fengkx"
