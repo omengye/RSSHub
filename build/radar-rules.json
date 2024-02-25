@@ -1435,6 +1435,115 @@
       }
     ]
   },
+  "56kog.com": {
+    "_name": "明月中文网",
+    ".": [
+      {
+        "title": "玄幻魔法",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/1_1.html"
+        ],
+        "target": "/56kog/class/1_1"
+      },
+      {
+        "title": "武侠修真",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/2_1.html"
+        ],
+        "target": "/56kog/class/2_1"
+      },
+      {
+        "title": "历史军事",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/4_1.html"
+        ],
+        "target": "/56kog/class/4_1"
+      },
+      {
+        "title": "侦探推理",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/5_1.html"
+        ],
+        "target": "/56kog/class/5_1"
+      },
+      {
+        "title": "网游动漫",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/6_1.html"
+        ],
+        "target": "/56kog/class/6_1"
+      },
+      {
+        "title": "恐怖灵异",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/8_1.html"
+        ],
+        "target": "/56kog/class/8_1"
+      },
+      {
+        "title": "都市言情",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/3_1.html"
+        ],
+        "target": "/56kog/class/3_1"
+      },
+      {
+        "title": "科幻",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/7_1.html"
+        ],
+        "target": "/56kog/class/7_1"
+      },
+      {
+        "title": "女生小说",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/9_1.html"
+        ],
+        "target": "/56kog/class/9_1"
+      },
+      {
+        "title": "其他",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/10_1.html"
+        ],
+        "target": "/56kog/class/10_1"
+      },
+      {
+        "title": "周点击榜",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/weekvisit_1.html"
+        ],
+        "target": "/56kog/top/weekvisit"
+      },
+      {
+        "title": "总收藏榜",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/goodnum_1.html"
+        ],
+        "target": "/56kog/top/goodnum"
+      },
+      {
+        "title": "最新入库",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/postdate_1.html"
+        ],
+        "target": "/56kog/top/postdate"
+      }
+    ]
+  },
   "5eplay.com": {
     "_name": "5EPLAY",
     "csgo": [
@@ -4046,7 +4155,7 @@
     ".": [
       {
         "title": "外汇牌价",
-        "docs": "https://docs.rsshub.app/routes/others#zhong-guo-yin-hang",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-yin-hang",
         "source": [
           "/sourcedb/whpj",
           "/"
@@ -9715,6 +9824,19 @@
       }
     ]
   },
+  "cib.com.cn": {
+    "_name": "中国兴业银行",
+    ".": [
+      {
+        "title": "外汇牌价",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-xing-ye-yin-hang",
+        "source": [
+          "/"
+        ],
+        "target": "/cib/whpj"
+      }
+    ]
+  },
   "ciidbnu.org": {
     "_name": "中国收入分配研究院",
     ".": [
@@ -13696,6 +13818,19 @@
         "source": [
           "/"
         ]
+      }
+    ]
+  },
+  "free.com.tw": {
+    "_name": "免費資源網路社群",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#mian-fei-zi-yuan-wang-lu-she-qun",
+        "source": [
+          "/"
+        ],
+        "target": "/free"
       }
     ]
   },
@@ -18303,6 +18438,19 @@
       }
     ]
   },
+  "hicairo.com": {
+    "_name": "HiFeng'Blog",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#hifeng-blog",
+        "source": [
+          "/"
+        ],
+        "target": "/hicairo"
+      }
+    ]
+  },
   "hinatazaka46.com": {
     "_name": "日向坂46",
     ".": [
@@ -18700,6 +18848,19 @@
           "/"
         ],
         "target": "/houxu/lives/:id"
+      }
+    ]
+  },
+  "howtoforge.com": {
+    "_name": "Howtoforge Linux Tutorials",
+    ".": [
+      {
+        "title": "学习",
+        "docs": "https://docs.rsshub.app/routes/study#howtoforge-linux-tutorials",
+        "source": [
+          "/"
+        ],
+        "target": "/howtoforge"
       }
     ]
   },
@@ -19319,6 +19480,54 @@
       }
     ]
   },
+  "indienova.com": {
+    "_name": "indienova 独立游戏",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/game#indienova-du-li-you-xi",
+        "source": [
+          "/indie-game-news",
+          "/"
+        ],
+        "target": "/indienova/article"
+      },
+      {
+        "title": "开发",
+        "docs": "https://docs.rsshub.app/routes/game#indienova-du-li-you-xi",
+        "source": [
+          "/indie-game-development",
+          "/"
+        ],
+        "target": "/indienova/development"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/routes/game#indienova-du-li-you-xi",
+        "source": [
+          "/column/:columnId"
+        ],
+        "target": "/indienova/column/:columnId"
+      },
+      {
+        "title": "GameDB 游戏库",
+        "docs": "https://docs.rsshub.app/routes/game#indienova-du-li-you-xi",
+        "source": [
+          "/gamedb/recent/:platform/p/1"
+        ],
+        "target": "/indienova/gamedb/recent/:platform"
+      },
+      {
+        "title": "会员开发游戏库",
+        "docs": "https://docs.rsshub.app/routes/game#indienova-du-li-you-xi",
+        "source": [
+          "/usergames",
+          "/"
+        ],
+        "target": "/indienova/usergames"
+      }
+    ]
+  },
   "inewsweek.cn": {
     "_name": "中国新闻周刊",
     ".": [
@@ -19735,7 +19944,7 @@
     ".": [
       {
         "title": "最近更新",
-        "docs": "https://docs.rsshub.app/routes/others#ai-q-sheng-huo-wang",
+        "docs": "https://docs.rsshub.app/routes/other#ai-q-sheng-huo-wang",
         "source": [
           "/post/new_100/",
           "/"
@@ -22514,6 +22723,25 @@
       }
     ]
   },
+  "jjwxc.net": {
+    "_name": "晋江文学城",
+    ".": [
+      {
+        "title": "作者最新作品",
+        "docs": "https://docs.rsshub.app/routes/reading#jin-jiang-wen-xue-cheng-zuo-zhe-zui-xin-zuo-pin",
+        "source": [
+          "oneauthor.php"
+        ]
+      },
+      {
+        "title": "作品",
+        "docs": "https://docs.rsshub.app/routes/reading#jin-jiang-wen-xue-cheng-zuo-pin",
+        "source": [
+          "onebook.php"
+        ]
+      }
+    ]
+  },
   "jornada.com.mx": {
     "_name": "La Jornada",
     ".": [
@@ -22562,6 +22790,39 @@
           "/webfile/news/:type"
         ],
         "target": "/jseea/news/:type"
+      }
+    ]
+  },
+  "jsu.edu.cn": {
+    "_name": "吉首大学",
+    ".": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-tong-zhi-gong-gao"
+      }
+    ],
+    "cxzx": [
+      {
+        "title": "创新中心",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-chuang-xin-zhong-xin"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-jiao-wu-chu"
+      }
+    ],
+    "rjxy": [
+      {
+        "title": "计算机科学与工程学院",
+        "docs": "https://docs.rsshub.app/routes/university##ji-shou-da-xue-ji-suan-ji-ke-xue-yu-gong-cheng-xue-yuan"
+      }
+    ],
+    "stxy": [
+      {
+        "title": "数学与统计学院",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-shu-xue-yu-tong-ji-xue-yuan"
       }
     ]
   },
@@ -28469,6 +28730,19 @@
       }
     ]
   },
+  "playpcesor.com": {
+    "_name": "电脑玩物",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#dian-nao-wan-wu",
+        "source": [
+          "/"
+        ],
+        "target": "/playpcesor"
+      }
+    ]
+  },
   "plurk.com": {
     "_name": "Plurk",
     ".": [
@@ -28810,6 +29084,17 @@
           "/"
         ],
         "target": "/qdu/jwc"
+      }
+    ],
+    "houqin": [
+      {
+        "title": "后勤管理处通知",
+        "docs": "https://docs.rsshub.app/routes/university#qing-dao-da-xue",
+        "source": [
+          "/tzgg.htm",
+          "/"
+        ],
+        "target": "/qdu/houqin"
       }
     ]
   },
@@ -30983,6 +31268,19 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/zzb/:id"
+      }
+    ]
+  },
+  "shisu.edu.cn": {
+    "_name": "上海外国语大学",
+    "news": [
+      {
+        "title": "上外新闻",
+        "docs": "https://docs.rsshub.app/routes/university#shang-hai-wai-guo-yu-da-xue",
+        "source": [
+          "/:category/index.html"
+        ],
+        "target": "/shisu/news/:category"
       }
     ]
   },
@@ -34076,6 +34374,411 @@
           "/pine-script-docs/en/:version/Release_notes.html"
         ],
         "target": "/tradingview/pine/:version"
+      }
+    ]
+  },
+  "transcriptforest.com": {
+    "_name": "Transcript Forest",
+    "www": [
+      {
+        "title": "All",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel"
+        ],
+        "target": "/transcriptforest"
+      },
+      {
+        "title": "a16z podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/a16z-podcast"
+        ],
+        "target": "/transcriptforest/a16z-podcast"
+      },
+      {
+        "title": "Aarthi and Sriram's Good Time Show",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/aarthi-and-srirams-good-time-show"
+        ],
+        "target": "/transcriptforest/aarthi-and-srirams-good-time-show"
+      },
+      {
+        "title": "Acquired",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/acquired"
+        ],
+        "target": "/transcriptforest/acquired"
+      },
+      {
+        "title": "All-In with Chamath, Jason, Sacks & Friedberg",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/all-in-with-chamath-jason-sacks-friedberg"
+        ],
+        "target": "/transcriptforest/all-in-with-chamath-jason-sacks-friedberg"
+      },
+      {
+        "title": "All the Hacks",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/all-the-hacks"
+        ],
+        "target": "/transcriptforest/all-the-hacks"
+      },
+      {
+        "title": "Breaking Points",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/breaking-points"
+        ],
+        "target": "/transcriptforest/breaking-points"
+      },
+      {
+        "title": "Cartoon Avatars",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/cartoon-avatars"
+        ],
+        "target": "/transcriptforest/cartoon-avatars"
+      },
+      {
+        "title": "Conversations With Coleman",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/conversations-with-coleman"
+        ],
+        "target": "/transcriptforest/conversations-with-coleman"
+      },
+      {
+        "title": "CSPI Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/cspi-podcast"
+        ],
+        "target": "/transcriptforest/cspi-podcast"
+      },
+      {
+        "title": "Culpable",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/culpable"
+        ],
+        "target": "/transcriptforest/culpable"
+      },
+      {
+        "title": "Dateline NBC",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/dateline-nbc"
+        ],
+        "target": "/transcriptforest/dateline-nbc"
+      },
+      {
+        "title": "Execs",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/execs"
+        ],
+        "target": "/transcriptforest/execs"
+      },
+      {
+        "title": "Exponent",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/exponent"
+        ],
+        "target": "/transcriptforest/exponent"
+      },
+      {
+        "title": "Freakonomics",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/freakonomics"
+        ],
+        "target": "/transcriptforest/freakonomics"
+      },
+      {
+        "title": "Future of StoryTelling",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/future-of-storytelling"
+        ],
+        "target": "/transcriptforest/future-of-storytelling"
+      },
+      {
+        "title": "Gamecraft",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/gamecraft"
+        ],
+        "target": "/transcriptforest/gamecraft"
+      },
+      {
+        "title": "Get WIRED",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/get-wired"
+        ],
+        "target": "/transcriptforest/get-wired"
+      },
+      {
+        "title": "Greymatter",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/greymatter"
+        ],
+        "target": "/transcriptforest/greymatter"
+      },
+      {
+        "title": "How I built this",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/how-I-built-this"
+        ],
+        "target": "/transcriptforest/how-I-built-this"
+      },
+      {
+        "title": "Huberman Lab",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/huberman-lab"
+        ],
+        "target": "/transcriptforest/huberman-lab"
+      },
+      {
+        "title": "ICYMI",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/icymi"
+        ],
+        "target": "/transcriptforest/icymi"
+      },
+      {
+        "title": "In Machines We Trust",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/in-machines-we-trust"
+        ],
+        "target": "/transcriptforest/in-machines-we-trust"
+      },
+      {
+        "title": "Invest Like the Best with Patrick O'Shaughnessy",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/invest-like-the-best-with-patrick-o-shaughnessy"
+        ],
+        "target": "/transcriptforest/invest-like-the-best-with-patrick-o-shaughnessy"
+      },
+      {
+        "title": "Joe Rogan Experience Review podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/joe-rogan-experience-review-podcast"
+        ],
+        "target": "/transcriptforest/joe-rogan-experience-review-podcast"
+      },
+      {
+        "title": "Land of Giants",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/land-of-giants"
+        ],
+        "target": "/transcriptforest/land-of-giants"
+      },
+      {
+        "title": "Lenny's Podcast: Product | Growth | Career",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/lenny-podcast-product-growth-career"
+        ],
+        "target": "/transcriptforest/lenny-podcast-product-growth-career"
+      },
+      {
+        "title": "Lex Fridman Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/lex-fridman-podcast"
+        ],
+        "target": "/transcriptforest/lex-fridman-podcast"
+      },
+      {
+        "title": "Making Sense with Sam Harris",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/making-sense-with-sam-harris"
+        ],
+        "target": "/transcriptforest/making-sense-with-sam-harris"
+      },
+      {
+        "title": "Masters of Scale",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/masters-of-scale"
+        ],
+        "target": "/transcriptforest/masters-of-scale"
+      },
+      {
+        "title": "Modern Wisdom",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/modern-wisdom"
+        ],
+        "target": "/transcriptforest/modern-wisdom"
+      },
+      {
+        "title": "Moment of Zen",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/moment-of-zen"
+        ],
+        "target": "/transcriptforest/moment-of-zen"
+      },
+      {
+        "title": "Morbid",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/morbid"
+        ],
+        "target": "/transcriptforest/morbid"
+      },
+      {
+        "title": "My First Million",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/my-first-million"
+        ],
+        "target": "/transcriptforest/my-first-million"
+      },
+      {
+        "title": "Naval",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/naval"
+        ],
+        "target": "/transcriptforest/naval"
+      },
+      {
+        "title": "Newcomer Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/newcomer-podcast"
+        ],
+        "target": "/transcriptforest/newcomer-podcast"
+      },
+      {
+        "title": "Not investment advice",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/not-investment-advice"
+        ],
+        "target": "/transcriptforest/not-investment-advice"
+      },
+      {
+        "title": "Odd Lots",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/odd-lots"
+        ],
+        "target": "/transcriptforest/odd-lots"
+      },
+      {
+        "title": "On with Kara Swisher",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/on-with-kara-swisher"
+        ],
+        "target": "/transcriptforest/on-with-kara-swisher"
+      },
+      {
+        "title": "Proof: A True Crime Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/proof-a-true-crime-podcast"
+        ],
+        "target": "/transcriptforest/proof-a-true-crime-podcast"
+      },
+      {
+        "title": "Reply All",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/reply-all"
+        ],
+        "target": "/transcriptforest/reply-all"
+      },
+      {
+        "title": "Revisionist History",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/revisionist-history"
+        ],
+        "target": "/transcriptforest/revisionist-history"
+      },
+      {
+        "title": "Serial",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/serial-podcast"
+        ],
+        "target": "/transcriptforest/serial-podcast"
+      },
+      {
+        "title": "Slow Burn",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/slow-burn"
+        ],
+        "target": "/transcriptforest/slow-burn"
+      },
+      {
+        "title": "StrictlyVC Download",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/strictlyvc-download"
+        ],
+        "target": "/transcriptforest/strictlyvc-download"
+      },
+      {
+        "title": "Stuff You Should Know:",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/stuff-you-should-know"
+        ],
+        "target": "/transcriptforest/stuff-you-should-know"
+      },
+      {
+        "title": "Subversive w/Alex Kaschuta",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/subversive-w-alex-kaschuta"
+        ],
+        "target": "/transcriptforest/subversive-w-alex-kaschuta"
+      },
+      {
+        "title": "TED Radio Hour",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/ted-radio-hour"
+        ],
+        "target": "/transcriptforest/ted-radio-hour"
+      },
+      {
+        "title": "The Bootstrapped Founder",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/the-bootstrapped-founder"
+        ],
+        "target": "/transcriptforest/the-bootstrapped-founder"
+      },
+      {
+        "title": "The Boyscast with Ryan Long",
+        "docs": "https://docs.rsshub.app/routes/multimedia#transcript-forest",
+        "source": [
+          "/en/channel/the-boyscast-with-ryan-long"
+        ],
+        "target": "/transcriptforest/the-boyscast-with-ryan-long"
       }
     ]
   },

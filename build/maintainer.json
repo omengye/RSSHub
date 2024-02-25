@@ -187,6 +187,12 @@
     "/52hrtt/symposium/:id?/:classId?": [
         "nczitzk"
     ],
+    "/56kog/class/:category?": [
+        "nczitzk"
+    ],
+    "/56kog/top/:category?": [
+        "nczitzk"
+    ],
     "/591/:country/rent/:query?": [
         "Yukaii"
     ],
@@ -806,7 +812,8 @@
         "hoilc"
     ],
     "/bilibili/user/article/:uid": [
-        "lengthmin"
+        "lengthmin",
+        "Qixingchen"
     ],
     "/bilibili/user/bangumi/:uid/:type?": [
         "wdssmq"
@@ -1306,6 +1313,9 @@
     "/chuapp/index/:category?": [],
     "/chuhaibiji": [],
     "/cia/foia-annual-report": [],
+    "/cib/whpj/:format?": [
+        "Qixingchen"
+    ],
     "/ciidbnu/:id?": [
         "nczitzk"
     ],
@@ -2340,6 +2350,9 @@
     "/fosshub/:id": [
         "nczitzk"
     ],
+    "/free": [
+        "cnkmmk"
+    ],
     "/freebuf/articles/:type": [
         "trganda"
     ],
@@ -3213,6 +3226,9 @@
     "/hfut/tzgg": [],
     "/hhu/libNews": [],
     "/hhu/libNewsc": [],
+    "/hicairo": [
+        "cnkmmk"
+    ],
     "/hinatazaka46/blog/:id?": [
         "nwindz",
         "akashigakki"
@@ -3320,6 +3336,9 @@
     ],
     "/houxu/memory": [
         "nczitzk"
+    ],
+    "/howtoforge": [
+        "cnkmmk"
     ],
     "/hoyolab/news/:language/:gids/:type": [
         "ZenoTian"
@@ -3543,7 +3562,19 @@
     "/indiansinkuwait/latest": [
         "TonyRL"
     ],
-    "/indienova/:type": [],
+    "/indienova/:type": [
+        "GensouSakuya",
+        "kt286"
+    ],
+    "/indienova/column/:columnId": [
+        "TonyRL"
+    ],
+    "/indienova/gamedb/recent": [
+        "TonyRL"
+    ],
+    "/indienova/usergames": [
+        "TonyRL"
+    ],
     "/inewsweek/:channel": [
         "changren-wcr"
     ],
@@ -3943,6 +3974,12 @@
     "/jisilu/:category?/:sort?/:day?": [
         "nczitzk"
     ],
+    "/jjwxc/author/:id?": [
+        "nczitzk"
+    ],
+    "/jjwxc/book/:id?": [
+        "nczitzk"
+    ],
     "/jlbtc/:category?": [],
     "/jlbtc/jwc/:id?": [],
     "/jlbtc/kyc/:category?": [],
@@ -3961,6 +3998,21 @@
     "/jpmorganchase": [],
     "/jseea/news/:type?": [
         "schen1024"
+    ],
+    "/jsu/cxzx/:types?": [
+        "wenjia03"
+    ],
+    "/jsu/jwc/:types?": [
+        "wenjia03"
+    ],
+    "/jsu/notice": [
+        "wenjia03"
+    ],
+    "/jsu/rjxy": [
+        "wenjia03"
+    ],
+    "/jsu/stxy": [
+        "wenjia03"
     ],
     "/ju/jwc/:type?": [],
     "/juejin/books": [
@@ -5377,6 +5429,9 @@
     "/playno1/st/:catid?": [
         "TonyRL"
     ],
+    "/playpcesor": [
+        "cnkmmk"
+    ],
     "/plurk/anonymous": [
         "TonyRL"
     ],
@@ -5498,6 +5553,9 @@
         "TonyRL"
     ],
     "/qcloud/mlvb/changelog": [],
+    "/qdu/houqin": [
+        "abc1763613206"
+    ],
     "/qdu/jwc": [
         "abc1763613206"
     ],
@@ -5668,7 +5726,8 @@
         "nczitzk"
     ],
     "/remnote/changelog": [
-        "TonyRL"
+        "TonyRL",
+        "amakerlife"
     ],
     "/remote-work/:caty?": [],
     "/rescuetime/release-notes/:os?": [],
@@ -5975,6 +6034,9 @@
     "/shiep/:type/:id?": [
         "gumibea",
         "TeamSUEP"
+    ],
+    "/shisu/news/:category": [
+        "Duuckjing"
     ],
     "/shmeea/:id?": [
         "jialinghui",
@@ -6772,6 +6834,9 @@
         "nczitzk"
     ],
     "/trakt/collection/:username/:type?": [],
+    "/transcriptforest/:channel?": [
+        "nczitzk"
+    ],
     "/treasury/press-releases/:category?/:title?": [],
     "/trending/:keywords/:numberOfDays?": [
         "Jkker"
