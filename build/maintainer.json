@@ -468,8 +468,6 @@
     "/android/platform-tools-releases": [
         "nczitzk"
     ],
-    "/anigamer/anime/:sn": [],
-    "/anigamer/new_anime": [],
     "/anime1/anime/:time/:name": [],
     "/anime1/search/:keyword": [],
     "/annualreviews/:id": [
@@ -1325,6 +1323,9 @@
     ],
     "/civitai/models": [
         "DIYgod"
+    ],
+    "/ciweimao/chapter/:id": [
+        "keocheung"
     ],
     "/clb/commentary/:lang?": [],
     "/clickme/:site/:grouping/:name": [
@@ -2430,12 +2431,18 @@
     "/gamegene/news": [
         "lone1y-51"
     ],
+    "/gamer/anime/:sn": [
+        "maple3142"
+    ],
     "/gamer/gnn/:category?": [
         "Arracc"
     ],
     "/gamer/hot/:bsn": [
         "nczitzk",
         "TonyRL"
+    ],
+    "/gamer/new_anime": [
+        "maple3142"
     ],
     "/gameres/hot": [],
     "/gameres/list/:id": [],
@@ -3165,6 +3172,9 @@
         "hnrainll"
     ],
     "/hatena/anonymous_diary/archive": [],
+    "/hbooker/chapter/:id": [
+        "keocheung"
+    ],
     "/hbr/topic/:topic?/:type?": [
         "nczitzk"
     ],
@@ -5293,7 +5303,6 @@
         "Maecenas",
         "nczitzk"
     ],
-    "/pcr/news": [],
     "/pcr/news-cn": [],
     "/pcr/news-tw": [],
     "/pediy/topic/:category?/:type?": [],
@@ -5497,6 +5506,9 @@
         "nczitzk"
     ],
     "/potplayer/update/:language?": [],
+    "/priconne-redive/news": [
+        "SayaSS"
+    ],
     "/producthunt/today": [
         "miaoyafeng",
         "Fatpandac"
@@ -5773,6 +5785,9 @@
     "/rsc/journal/:id/:category?": [
         "nczitzk"
     ],
+    "/rsshub/m/:key/:url": [
+        "TonyRL"
+    ],
     "/rsshub/routes/:lang?": [
         "DIYgod"
     ],
@@ -6033,6 +6048,9 @@
         "fuzy112"
     ],
     "/sexinsex/:id/:type?": [],
+    "/sfacg/novel/chapter/:id": [
+        "keocheung"
+    ],
     "/shanbay/checkin/:id": [],
     "/shanbay/footprints/:category?": [],
     "/shanghaitech/activity": [],
@@ -6556,6 +6574,9 @@
     "/telegram/blog": [
         "fengkx"
     ],
+    "/telegram/channel/:username": [
+        "synchrone"
+    ],
     "/telegram/channel/:username/:routeParams?": [
         "DIYgod",
         "Rongronggg9"
@@ -6798,13 +6819,18 @@
     "/tokeninsight/report:lang?": [
         "fuergaosi233"
     ],
+    "/tongji/bks": [
+        "shiquda"
+    ],
     "/tongji/sse/:type?": [
         "sgqy"
     ],
     "/tongji/yjs": [
         "shengmaosu"
     ],
-    "/tongli/news/:type": [],
+    "/tongli/news/:type": [
+        "CokeMine"
+    ],
     "/toodaylab/column/:id": [
         "nczitzk"
     ],
@@ -6861,6 +6887,9 @@
     ],
     "/tucaoqq/post/:project/:key": [],
     "/tvb/news/:category?/:language?": [
+        "nczitzk"
+    ],
+    "/tvtropes/featured/:category?": [
         "nczitzk"
     ],
     "/twitch/live/:login": [
@@ -7331,6 +7360,9 @@
     ],
     "/wmc-bj/publish/:category?": [
         "nczitzk"
+    ],
+    "/wmpvp/news/:type": [
+        "tssujt"
     ],
     "/wnacg": [
         "KenMizz"
@@ -7915,6 +7947,9 @@
     "/zongheng/chapter/:id": [],
     "/zotero/versions": [
         "jasongzy"
+    ],
+    "/zrblog": [
+        "cnkmmk"
     ],
     "/zreading": [],
     "/zsnews/index/:cateid": [],
