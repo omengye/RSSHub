@@ -1421,6 +1421,9 @@
   "/dedao/user/:id/:type?": [
     "nczitzk"
   ],
+  "/deepin/homepage/:user_id": [
+    "tensor-tech"
+  ],
   "/deeplearning/thebatch": [
     "nczitzk",
     "juvenn"
@@ -2980,6 +2983,9 @@
   "/issuehunt/funded/:username/:repo": [
     "running-grass"
   ],
+  "/itc/collection/:colType": [
+    "cnkmmk"
+  ],
   "/itch/devlog/:user/:id": [
     "nczitzk"
   ],
@@ -3879,6 +3885,9 @@
   "/njucm/grabszs": [
     "real-jiakai"
   ],
+  "/njuferret/blog": [
+    "tyl0622"
+  ],
   "/njupt/jwc/:type?": [
     "shaoye"
   ],
@@ -4210,7 +4219,9 @@
   "/panewslab/topic/:id": [
     "nczitzk"
   ],
-  "/papers/:category{.+}?": [],
+  "/papers/:category{.+}?": [
+    "nczitzk"
+  ],
   "/paradigm/writing": [
     "Fatpandac"
   ],
@@ -6134,7 +6145,9 @@
   "/xinpianchang/rank/:category?": [
     "nczitzk"
   ],
-  "/xjtu/dean/:subpath{.+}": [],
+  "/xjtu/dean/:subpath{.+}": [
+    "hoilc"
+  ],
   "/xjtu/ee/:id?": [
     "DylanXie123"
   ],
