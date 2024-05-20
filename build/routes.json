@@ -1,15 +1,46 @@
 {
   "81": {
     "routes": {
-      "/81rc/*": {
-        "path": "/81rc/*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/81rc/:category{.+}?": {
+        "path": "/81rc/:category{.+}?",
+        "name": "中国人民解放军专业技术人才网",
+        "url": "81rc.81.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/81/81rc/sy/gzdt_210283",
+        "parameters": {
+          "category": "分类，默认为 `sy/gzdt_210283`，即工作动态，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [工作动态](https://81rc.81.cn/sy/gzdt_210283)，网址为 `https://81rc.81.cn/sy/gzdt_210283`。截取 `https://81rc.81.cn/` 到末尾的部分 `sy/gzdt_210283` 作为参数填入，此时路由为 [`/81/81rc/sy/gzdt_210283`](https://rsshub.app/81/81rc/sy/gzdt_210283)。\n  :::\n  ",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "81rc.81.cn/:category"
+            ]
+          }
+        ],
         "location": "81rc/index.ts"
       }
     },
     "name": "中国军网",
-    "url": "81rc.81.cn"
+    "url": "81.cn",
+    "categories": [
+      "government"
+    ],
+    "description": ""
   },
   "163": {
     "routes": {
@@ -4250,7 +4281,8 @@
       "/rss/:rss?": {
         "path": "/rss/:rss?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "example": "/apnews/rss/business",
         "parameters": {
@@ -6372,7 +6404,8 @@
       "/user/dynamic/:uid/:routeParams?": {
         "path": "/user/dynamic/:uid/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/bilibili/user/dynamic/2267573",
         "parameters": {
@@ -7008,7 +7041,8 @@
           "DIYgod"
         ],
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/bilibili/ranking/0/3/1",
         "parameters": {
@@ -7195,7 +7229,8 @@
       "/user/video/:uid/:disableEmbed?": {
         "path": "/user/video/:uid/:disableEmbed?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/bilibili/user/video/2267573",
         "parameters": {
@@ -7977,6 +8012,46 @@
     },
     "name": "北京社科网",
     "url": "bjsk.org.cn"
+  },
+  "bjtu": {
+    "routes": {
+      "/gs/:type?": {
+        "path": "/gs/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/bjtu/gs/noti",
+        "parameters": {
+          "type": "Article type"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gs.bjtu.edu.cn"
+            ]
+          }
+        ],
+        "name": "研究生院",
+        "maintainers": [
+          "E1nzbern"
+        ],
+        "description": "\n  | 文章来源           | 参数         |\n  | ----------------- | ------------ |\n  | 通知公告_招生      | noti_zs      |\n  | 通知公告           | noti         |\n  | 新闻动态           | news         |\n  | 招生宣传           | zsxc         |\n  | 培养               | py           |\n  | 招生               | zs           |\n  | 学位               | xw           |\n  | 研工部             | ygb          |\n  | 通知公告 - 研工部   | ygbtzgg      |\n  | 新闻动态 - 研工部   | ygbnews      |\n  | 新闻封面 - 研工部   | ygbnewscover |\n  | 文章列表           | all          |\n  | 博士招生 - 招生专题 | bszs_zszt    |\n  | 硕士招生 - 招生专题 | sszs_zszt    |\n  | 招生简章 - 招生专题 | zsjz_zszt    |\n  | 政策法规 - 招生专题 | zcfg_zszt    |\n\n  :::tip 文章来源\n  文章来源的命名均来自研究生院网站标题。\n  最常用的几项有“通知公告_招生”、“通知公告”、“博士招生 - 招生专题”、“硕士招生 - 招生专题”。\n  :::",
+        "location": "gs.ts"
+      }
+    },
+    "name": "Beijing Jiaotong University",
+    "url": "bjtu.edu.cn",
+    "zh": {
+      "name": "北京交通大学"
+    }
   },
   "bjwxdxh": {
     "routes": {
@@ -16118,7 +16193,8 @@
       "/build/:owner/:image/:tag?": {
         "path": "/build/:owner/:image/:tag?",
         "categories": [
-          "program-update"
+          "program-update",
+          "popular"
         ],
         "example": "/dockerhub/build/wangqiru/ttrss",
         "parameters": {
@@ -16826,7 +16902,8 @@
       "/group/:groupid/:type?": {
         "path": "/group/:groupid/:type?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/douban/group/648102",
         "parameters": {
@@ -22158,7 +22235,8 @@
       "/issue/:user/:repo/:state?/:labels?": {
         "path": "/issue/:user/:repo/:state?/:labels?",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/github/issue/vuejs/core/all/wontfix",
         "parameters": {
@@ -25814,7 +25892,7 @@
         "categories": [
           "shopping"
         ],
-        "example": "/guangdiu/search/k=百度网盘",
+        "example": "/guangdiu/search/q=百度网盘",
         "parameters": {
           "query": "链接参数，对应网址问号后的内容"
         },
@@ -30396,7 +30474,8 @@
       "/:category/:key": {
         "path": "/:category/:key",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/instagram/user/stefaniejoosten",
         "parameters": {
@@ -31128,19 +31207,28 @@
   },
   "javbus": {
     "routes": {
-      "*": {
-        "path": "*",
+      "/:path{.+}?": {
+        "path": "/:path{.+}?",
         "radar": [
           {
             "source": [
-              "www.seejav.pw/"
+              "www.javbus.com/:path*"
             ],
-            "target": ""
+            "target": "/:path"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "www.seejav.pw/",
+        "name": "Works",
+        "maintainers": [
+          "MegrezZhu",
+          "CoderTonyChan",
+          "nczitzk",
+          "Felix2yu"
+        ],
+        "categories": [
+          "multimedia",
+          "popular"
+        ],
+        "url": "www.javbus.com",
         "location": "index.ts"
       }
     },
@@ -31906,7 +31994,8 @@
       "/topic/:id/:showUid?": {
         "path": "/topic/:id/:showUid?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/jike/topic/556688fae4b00c57d9dd46ee",
         "parameters": {
@@ -31939,7 +32028,8 @@
       "/user/:id": {
         "path": "/user/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/jike/user/3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB",
         "parameters": {
@@ -34632,7 +34722,8 @@
       "/user/:name?": {
         "path": "/user/:name?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/lofter/user/i",
         "parameters": {
@@ -41574,6 +41665,37 @@
     "name": "南京航空航天大学",
     "url": "aao.nuaa.edu.cn"
   },
+  "nudt": {
+    "routes": {
+      "/yjszs/:type?": {
+        "path": "/yjszs/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/nudt/yjszs/sszs",
+        "parameters": {
+          "type": "分类，见下表，默认为硕士招生"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研究生院",
+        "maintainers": [
+          "Blank0120"
+        ],
+        "url": "yjszs.nudt.edu.cn/",
+        "description": "| 通知公告 | 硕士招生 |\n  | -------- | -------- |\n  | tzgg     | sszs     |",
+        "location": "yjszs.ts"
+      }
+    },
+    "name": "中国人民解放军国防科技大学",
+    "url": "www.nudt.edu.cn"
+  },
   "nuist": {
     "routes": {
       "/bulletin/:category?": {
@@ -44667,7 +44789,8 @@
       "/ranking/:mode/:date?": {
         "path": "/ranking/:mode/:date?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/pixiv/ranking/week",
         "parameters": {
@@ -44692,7 +44815,8 @@
       "/search/:keyword/:order?/:mode?": {
         "path": "/search/:keyword/:order?/:mode?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/pixiv/search/Nezuko/popular/2",
         "parameters": {
@@ -44718,7 +44842,8 @@
       "/user/:id": {
         "path": "/user/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/pixiv/user/15288095",
         "parameters": {
@@ -46887,6 +47012,69 @@
         "description": "| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::",
         "location": "ac/rank.ts"
       },
+      "/cfhd/news/:category?": {
+        "path": "/cfhd/news/:category?",
+        "name": "穿越火线 CFHD 专区资讯中心",
+        "url": "cfhd.cf.qq.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/qq/cfhd/news",
+        "parameters": {
+          "category": "分类，默认为 60847，即最新，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [穿越火线 CFHD 专区资讯中心 - 最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml)，网址为 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml`。截取 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/` 到末尾 `/m22510/list_1.shtml` 的部分 `60847` 作为参数填入，此时路由为 [`/qq/cfhd/news/60847`](https://rsshub.app/qq/cfhd/news/60847)。\n  :::\n\n  | 分类                                                                                                  | ID                                            |\n  | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |\n  | [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |\n  | [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |\n  | [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |\n  | [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |\n  | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |\n  ",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 最新",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/60847"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 公告",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59625"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 版本",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/60850"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 赛事",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59626"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 杂谈",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59624"
+          }
+        ],
+        "location": "cfhd/index.ts"
+      },
       "/fact": {
         "path": "/fact",
         "categories": [
@@ -46964,8 +47152,12 @@
         "location": "kg/user.ts"
       }
     },
-    "name": "腾讯新闻较真查证平台",
-    "url": "ac.qq.com"
+    "name": "腾讯网",
+    "url": "qq.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "qq88": {
     "routes": {
@@ -47917,7 +48109,8 @@
       "/routes/:lang?": {
         "path": "/routes/:lang?",
         "categories": [
-          "program-update"
+          "program-update",
+          "popular"
         ],
         "example": "/rsshub/routes/en",
         "parameters": {
@@ -49846,7 +50039,8 @@
       "/user/:uid": {
         "path": "/user/:uid",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/sehuatang/user/411096",
         "parameters": {
@@ -54129,6 +54323,35 @@
         "description": "栏目列表：\n\n  | 通知公告 | 扬华新闻 | 多彩学院 | 学工之家 |\n  | -------- | -------- | -------- | -------- |\n  | tzgg     | yhxw     | dcxy     | xgzj     |",
         "location": "xg.ts"
       },
+      "/gsee/yjs": {
+        "path": "/gsee/yjs",
+        "categories": [
+          "university"
+        ],
+        "example": "/swjtu/gsee/yjs",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gsee.swjtu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "地球科学与工程学院",
+        "maintainers": [
+          "E1nzbern"
+        ],
+        "description": "研究生教育通知公告",
+        "location": "gsee/yjs.ts"
+      },
       "/jtys/yjs": {
         "path": "/jtys/yjs",
         "categories": [
@@ -54187,7 +54410,7 @@
           "CYTMWIA"
         ],
         "url": "swpu.edu.cn/",
-        "description": "| 栏目 | 重要通知公告 | 部门通知公告 | 本周活动 | 学术报告 |\n  | ---- | ------------ | ------------ | -------- | -------- |\n  | 代码 | zytzgg       | bmtzgg       | bzhd     | xsbg     |",
+        "description": "| 栏目 | 重要通知公告 | 部门通知公告 | 本周活动 |\n  | ---- | ------------ | ------------ | -------- |\n  | 代码 | zytzgg       | bmtzgg       | bzhd     |",
         "location": "bgw.ts"
       },
       "/cjxy/:code": {
@@ -54347,7 +54570,7 @@
             "target": ""
           }
         ],
-        "name": "计算机科学学院",
+        "name": "计算机与软件学院",
         "maintainers": [
           "CYTMWIA"
         ],
@@ -55376,7 +55599,8 @@
       "/channel/:username/:routeParams?": {
         "path": "/channel/:username/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/telegram/channel/awesomeDIYgod/searchQuery=twitter",
         "parameters": {
@@ -55731,25 +55955,33 @@
         "parameters": {
           "channel": "类型，见下表，默认为快讯"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "name": "新闻快讯",
         "maintainers": [
           "Fatpandac",
           "jameshih"
         ],
+        "radar": [
+          {
+            "title": "文章",
+            "source": [
+              "www.theblockbeats.info/article"
+            ],
+            "target": "/article"
+          },
+          {
+            "title": "快讯",
+            "source": [
+              "www.theblockbeats.info/newsflash"
+            ],
+            "target": "/newsflash"
+          }
+        ],
         "description": "|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |",
         "location": "index.ts"
       }
     },
-    "name": "律动",
-    "url": "rszhaopin.theblockbeats.info"
+    "name": "律动 BlockBeats",
+    "url": "www.theblockbeats.info"
   },
   "thecover": {
     "routes": {
@@ -57812,7 +58044,7 @@
         "radar": [
           {
             "source": [
-              "twitter.com/home"
+              "x.com/home"
             ],
             "target": "/home"
           }
@@ -57822,7 +58054,8 @@
       "/keyword/:keyword/:routeParams?": {
         "path": "/keyword/:keyword/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/twitter/keyword/RSSHub",
         "parameters": {
@@ -57859,7 +58092,7 @@
         "radar": [
           {
             "source": [
-              "twitter.com/search"
+              "x.com/search"
             ]
           }
         ],
@@ -57934,7 +58167,7 @@
         "radar": [
           {
             "source": [
-              "twitter.com/i/lists/:id"
+              "x.com/i/lists/:id"
             ],
             "target": "/list/:id"
           }
@@ -57944,7 +58177,8 @@
       "/media/:id/:routeParams?": {
         "path": "/media/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/twitter/media/DIYgod",
         "parameters": {
@@ -57981,7 +58215,7 @@
         "radar": [
           {
             "source": [
-              "twitter.com/:id/media"
+              "x.com/:id/media"
             ],
             "target": "/media/:id"
           }
@@ -58049,7 +58283,8 @@
       "/user/:id/:routeParams?": {
         "path": "/user/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/twitter/user/DIYgod",
         "parameters": {
@@ -58091,7 +58326,7 @@
         "radar": [
           {
             "source": [
-              "twitter.com/:id"
+              "x.com/:id"
             ],
             "target": "/user/:id"
           }
@@ -58099,8 +58334,8 @@
         "location": "user.ts"
       }
     },
-    "name": "Twitter",
-    "url": "twitter.com",
+    "name": "X (Twitter)",
+    "url": "x.com",
     "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using `TWITTER_COOKIE` (recommended): Configure the cookies of logged-in Twitter Web, at least including the fields auth_token and ct0. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n"
   },
   "twreporter": {
@@ -61138,7 +61373,8 @@
       "/keyword/:keyword/:routeParams?": {
         "path": "/keyword/:keyword/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/weibo/keyword/DIYgod",
         "parameters": {
@@ -61235,7 +61471,8 @@
       "/user/:uid/:routeParams?": {
         "path": "/user/:uid/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/weibo/user/1195230310",
         "parameters": {
@@ -62939,7 +63176,8 @@
       "/podcast/:id": {
         "path": "/podcast/:id",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/xiaoyuzhou/podcast/6021f949a789fca4eff4492c",
         "parameters": {
@@ -63040,49 +63278,13 @@
   },
   "ximalaya": {
     "routes": {
-      "/:type/:id/:all?": {
-        "path": [
-          "/:type/:id/:all?",
-          "/:type/:id/:all/:shownote?"
-        ],
-        "categories": [
-          "multimedia"
-        ],
-        "example": "/ximalaya/album/299146",
-        "parameters": {
-          "type": "专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到",
-          "id": "专辑 id, 可在对应专辑页面的 URL 中找到",
-          "all": "是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。"
-        },
-        "features": {
-          "requireConfig": [
-            {
-              "name": "XIMALAYA_TOKEN",
-              "description": ""
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": true,
-          "supportScihub": false
-        },
-        "name": "专辑（不输出 ShowNote）",
-        "maintainers": [
-          "lengthmin",
-          "jjeejj",
-          "prnake"
-        ],
-        "description": "目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::",
-        "location": "album.ts"
-      },
       "/:type/:id/:all/:shownote?": {
         "path": [
-          "/:type/:id/:all?",
           "/:type/:id/:all/:shownote?"
         ],
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/ximalaya/album/299146",
         "parameters": {
@@ -63103,13 +63305,13 @@
           "supportPodcast": true,
           "supportScihub": false
         },
-        "name": "专辑（不输出 ShowNote）",
+        "name": "专辑",
         "maintainers": [
           "lengthmin",
           "jjeejj",
           "prnake"
         ],
-        "description": "目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::",
+        "description": "目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::",
         "location": "album.ts"
       }
     },
@@ -65025,7 +65227,8 @@
       "/user/:username/:embed?": {
         "path": "/user/:username/:embed?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/youtube/user/@JFlaMusic",
         "parameters": {
@@ -65844,7 +66047,8 @@
       "/people/activities/:id": {
         "path": "/people/activities/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/zhihu/people/activities/diygod",
         "parameters": {
