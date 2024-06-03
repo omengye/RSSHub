@@ -256,9 +256,6 @@
   "/abskoop/nsfw": [
     "zhenhappy"
   ],
-  "/academia/topic/:interest": [
-    "K33k0"
-  ],
   "/accessbriefing/:category{.+}?": [
     "nczitzk"
   ],
@@ -1434,9 +1431,6 @@
     "zoenglinghou",
     "nczitzk"
   ],
-  "/dataguidance/news": [
-    "harveyqiu"
-  ],
   "/dayanzai/:category/:fulltext?": [],
   "/dbaplus/": [
     "cnkmmk"
@@ -2450,35 +2444,19 @@
   ],
   "/gov/sasac/:path{.+}": [],
   "/gov/sdb/*": [],
-  "/gov/sh/fgw/:category{.+}?": [
+  "/gov/shaanxi/kjt/:id?": [
     "nczitzk"
-  ],
-  "/gov/shanghai/fgw/:category{.+}?": [
-    "nczitzk"
-  ],
-  "/gov/sh/rsj/ksxm": [
-    "Fatpandac"
   ],
   "/gov/shanghai/rsj/ksxm": [
     "Fatpandac"
   ],
-  "/gov/sh/wgj/:page?": [
-    "gideonsenku"
-  ],
   "/gov/shanghai/wgj/:page?": [
     "gideonsenku"
-  ],
-  "/gov/sh/wsjkw/yqtb": [
-    "zcf0508"
   ],
   "/gov/shanghai/wsjkw/yqtb": [
     "zcf0508"
   ],
-  "/gov/sh/yjj/*": [],
   "/gov/shanghai/yjj/*": [],
-  "/gov/shaanxi/kjt/:id?": [
-    "nczitzk"
-  ],
   "/gov/shenzhen/hrss/szksy/:caty/:page?": [
     "zlasd"
   ],
@@ -2976,9 +2954,13 @@
   "/idolypride/news": [
     "Mingxia1"
   ],
-  "/ieee/journal/:punumber/:earlyAccess?": [
-    "HenryQW"
+  "/ieee/journal/:journal/earlyaccess/:sortType?": [
+    "5upernova-heng"
   ],
+  "/ieee/:journal/latest/vol/:sortType?": [],
+  "/ieee/journal/:journal/:sortType?": [],
+  "/ieee/:journal/latest/date/:sortType?": [],
+  "/ieee/journal/:journal/recent/:sortType?": [],
   "/ieee-security/security-privacy": [
     "ZeddYu"
   ],
@@ -3170,9 +3152,6 @@
   "/javdb/tags/:query?/:category?": [
     "nczitzk"
   ],
-  "/javdb/video_codes/:code/:filter?": [
-    "sgpublic"
-  ],
   "/javlibrary/videos/bestrated/:language?/:mode?": [],
   "/javlibrary/bestrated/:language?/:mode?": [],
   "/javlibrary/bestreviews/:language?/:mode?": [
@@ -3260,12 +3239,6 @@
   ],
   "/jjwxc/book/:id?": [
     "nczitzk"
-  ],
-  "/jlu/jwc": [
-    "mayouxi"
-  ],
-  "/jlu/ccst/xwzx/:category": [
-    "mayouxi"
   ],
   "/jornada/:date?/:category?": [
     "Thealf154"
@@ -4151,9 +4124,7 @@
   "/nowcoder/schedule/:propertyId?/:typeId?": [
     "junfengP"
   ],
-  "/npm/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}": [
-    "Fatpandac"
-  ],
+  "/npmpackage/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}": [],
   "/npr/:endpoint?": [
     "bennyyip"
   ],
@@ -4634,12 +4605,6 @@
   "/ps/trophy/:id": [
     "DIYgod"
   ],
-  "/psyche/topic/:topic": [
-    "emdoe"
-  ],
-  "/psyche/type/:type": [
-    "emdoe"
-  ],
   "/pts/curations": [
     "nczitzk"
   ],
@@ -4650,9 +4615,6 @@
   ],
   "/pubmed/trending/:filters?": [
     "nczitzk"
-  ],
-  "/pubscholar/explore/:category?/:keyword?": [
-    "TonyRL"
   ],
   "/pumc/mdadmission": [
     "nczitzk"
@@ -5443,9 +5405,6 @@
     "nczitzk"
   ],
   "/surfshark/blog/:category{.+}?": [],
-  "/sustainabilitymag/articles": [
-    "mintyfrankie"
-  ],
   "/sustech/bidding": [
     "sparkcyf"
   ],
@@ -5597,9 +5556,6 @@
   ],
   "/telegram/stickerpack/:name": [
     "DIYgod"
-  ],
-  "/tencent/cloud/developer/column/:categoryId?": [
-    "lyling"
   ],
   "/tencent/news/author/:mid": [
     "LogicJake",
@@ -6202,9 +6158,6 @@
     "DIYgod",
     "Rongronggg9"
   ],
-  "/weibo/user_bookmarks/:uid/:routeParams?": [
-    "cztchoice"
-  ],
   "/weibo/user/:uid/:routeParams?": [
     "DIYgod",
     "iplusx",
@@ -6273,9 +6226,6 @@
   ],
   "/winstall/:appId": [
     "TonyRL"
-  ],
-  "/wired/tag/:tag": [
-    "Naiqus"
   ],
   "/wise/pair/:source/:target": [
     "HenryQW"
