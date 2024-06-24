@@ -4040,6 +4040,45 @@
     "name": "艾莱资讯",
     "url": "rail.ally.net.cn"
   },
+  "alpinelinux": {
+    "routes": {
+      "/pkgs/:name/:routeParams?": {
+        "name": "Packages",
+        "categories": [
+          "program-update"
+        ],
+        "maintainers": [
+          "CaoMeiYouRen"
+        ],
+        "path": "/pkgs/:name/:routeParams?",
+        "parameters": {
+          "name": "Packages name",
+          "routeParams": "Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"
+        },
+        "example": "/alpinelinux/pkgs/nodejs",
+        "description": "Alpine Linux packages update",
+        "radar": [
+          {
+            "source": [
+              "https://pkgs.alpinelinux.org/packages"
+            ]
+          }
+        ],
+        "zh": {
+          "name": "软件包",
+          "description": "Alpine Linux 软件包更新"
+        },
+        "location": "pkgs.ts"
+      }
+    },
+    "name": "Alpine Linux",
+    "url": "alpinelinux.org",
+    "description": "Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox.",
+    "zh": {
+      "name": "Alpine Linux",
+      "description": "Alpine Linux 是一个基于 musl libc 和 busybox 的面向安全的轻量级 Linux 发行版。"
+    }
+  },
   "alternativeto": {
     "routes": {
       "/platform/:name/:routeParams?": {
@@ -6016,6 +6055,37 @@
     },
     "name": "BBC News Labs",
     "url": "bbcnewslabs.co.uk"
+  },
+  "bc3ts": {
+    "routes": {
+      "/post/list/:sort?": {
+        "path": "/post/list/:sort?",
+        "example": "/bc3ts/post/list",
+        "parameters": {
+          "sort": "排序方式，`1` 為最新，`2` 為熱門，默认為 `1`"
+        },
+        "features": {
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "web.bc3ts.net"
+            ]
+          }
+        ],
+        "name": "動態",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "list.ts"
+      }
+    },
+    "name": "爆料公社",
+    "url": "web.bc3ts.net",
+    "categories": [
+      "new-media"
+    ]
   },
   "bdys": {
     "routes": {
@@ -8996,6 +9066,75 @@
     "name": "Bluesky (bsky)",
     "url": "bsky.app"
   },
+  "bt0": {
+    "routes": {
+      "/mv/:number/:domain?": {
+        "path": "/mv/:number/:domain?",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/bt0/mv/35575567/2",
+        "parameters": {
+          "number": "影视详情id, 网页路径为`/mv/{id}.html`其中的id部分, 一般为8位纯数字",
+          "domain": "数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "2bt0.com/mv/"
+            ]
+          }
+        ],
+        "name": "影视资源下载列表",
+        "maintainers": [
+          "miemieYaho"
+        ],
+        "location": "mv.ts"
+      },
+      "/tlist/:sc/:domain?": {
+        "path": "/tlist/:sc/:domain?",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/bt0/tlist/1",
+        "parameters": {
+          "sc": "分类(1-5), 1:电影, 2:电视剧, 3:周热门, 4:月热门, 5:年度热门",
+          "domain": "数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "2bt0.com/tlist/"
+            ]
+          }
+        ],
+        "name": "最新资源列表",
+        "maintainers": [
+          "miemieYaho"
+        ],
+        "location": "tlist.ts"
+      }
+    },
+    "name": "不太灵影视",
+    "url": "2bt0.com",
+    "description": ":::tip\n  (1-9)bt0.com 都指向同一个\n  :::"
+  },
   "btzj": {
     "routes": {
       "/:category?": {
@@ -10442,6 +10581,36 @@
     },
     "name": "Macau Independent Commission Against Corruption 澳门廉政公署",
     "url": "ccac.org.mo"
+  },
+  "cccfna": {
+    "routes": {
+      "/:category/:type?": {
+        "path": "/:category/:type?",
+        "categories": [
+          "government"
+        ],
+        "example": "/cccfna/meirigengxin",
+        "parameters": {
+          "category": "文章种类，即一级分类，详情见下表",
+          "type": "文章类型，即二级分类，详情见下表"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.cccfna.org.cn/:category/:type?"
+            ]
+          }
+        ],
+        "description": "\n:::tip\n存在**二级分类**的**一级分类**不能单独当作参数，如：`/cccfna/hangyezixun`\n:::\n    \n文章的目录分级如下:\n\n- shanghuidongtai（商会通知）\n- meirigengxin（每日更新）\n- tongzhigonggao（通知公告）\n- hangyezixun（行业资讯）\n  - zhengcedaohang（政策导航）\n  - yujinxinxi（预警信息）\n  - shichangdongtai（市场动态）\n  - gongxuxinxi（供需信息）\n- maoyitongji（贸易统计）\n  - tongjikuaibao（统计快报）\n  - hangyetongji（行业统计）\n  - guobiemaoyi（国别贸易）\n  - maoyizhinan（贸易指南）\n- nongchanpinbaogao（农产品报告）\n  - nongchanpinyuebao（农产品月报）\n  - zhongdianchanpinyuebao（重点产品月报）\n  - zhongdianchanpinzoushi（重点产品走势）",
+        "name": "资讯信息",
+        "maintainers": [
+          "hualiong"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "中国食品土畜进出口商会",
+    "url": "www.cccfna.org.cn"
   },
   "ccf": {
     "routes": {
@@ -34086,6 +34255,45 @@
     "name": "KeePass",
     "url": "keepass.info"
   },
+  "kelownacapnews": {
+    "routes": {
+      "/:type": {
+        "path": "/:type",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/kelownacapnews/local-news",
+        "parameters": {
+          "type": "Type of news"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.kelownacapnews.com/:type"
+            ],
+            "target": "/:type"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "hualiong"
+        ],
+        "url": "www.kelownacapnews.com",
+        "description": "`type` is as follows:\n  \n| News type     | Value         | News type    | Value        |\n| ------------- | ------------- | ------------ | ------------ |\n| News          | news          | Sports       | sports       |\n| Local News    | local-news    | Business     | business     |\n| Canadian News | national-news | Trending Now | trending-now |\n| World News    | world-news    | Opinion      | opinion      |\n| Entertainment | entertainment |              |              |",
+        "location": "news.ts"
+      }
+    },
+    "name": "Kelowna Capital News",
+    "url": "www.kelownacapnews.com"
+  },
   "kemono": {
     "routes": {
       "/:source?/:id?": {
@@ -38495,6 +38703,43 @@
     },
     "name": "快科技",
     "url": "m.mydrivers.com"
+  },
+  "myfans": {
+    "routes": {
+      "/user/:username": {
+        "path": "/user/:username",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/myfans/user/secret_japan",
+        "parameters": {
+          "username": "User handle"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "myfans.jp/:username",
+              "myfans.jp/:language/:username"
+            ]
+          }
+        ],
+        "name": "User Posts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "post.ts"
+      }
+    },
+    "name": "myfans",
+    "url": "myfans.jp"
   },
   "myfigurecollection": {
     "routes": {
@@ -49647,6 +49892,36 @@
     "name": "Sakamichi Series 坂道系列官网资讯",
     "url": "sakurazaka46.com"
   },
+  "samd": {
+    "routes": {
+      "news/:typeId": {
+        "path": "news/:typeId",
+        "categories": [
+          "government"
+        ],
+        "example": "/samd/news/440",
+        "parameters": {
+          "type": "文章类型ID，见下表"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "description": "| 行业资讯 | 协会动态 | 重要通知 | 政策法规 |\n| --- | --- | --- | --- |\n| 434 | 436 | 438 | 440 |",
+        "name": "资讯信息",
+        "maintainers": [
+          "hualiong"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "深圳市医疗器械行业协会",
+    "url": "www.samd.org.cn"
+  },
   "samsung": {
     "routes": {
       "/research/blog": {
@@ -51133,6 +51408,9 @@
           "junfengP",
           "nczitzk"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "description": "**原创 BT 电影**\n\n  | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |\n  | -------- | ------------ | ------------ | ------------ | -------- | ------- | -------- | -------- | -------- | -------- | -------- |\n  | gcyc     | yzwmyc       | yzymyc       | gqzwzm       | sjxz     | vr      | srym     | omwm     | hgzb     | dmyc     | zhtl     |\n\n  **色花图片**\n\n  | 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | yczp     | ztzp     | hrjp     | yzxa     | omxa     | ktdm     | ttxz     |",
         "location": "index.ts"
       },
@@ -51150,6 +51428,9 @@
           "junfengP",
           "nczitzk"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "description": "**原创 BT 电影**\n\n  | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |\n  | -------- | ------------ | ------------ | ------------ | -------- | ------- | -------- | -------- | -------- | -------- | -------- |\n  | gcyc     | yzwmyc       | yzymyc       | gqzwzm       | sjxz     | vr      | srym     | omwm     | hgzb     | dmyc     | zhtl     |\n\n  **色花图片**\n\n  | 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | yczp     | ztzp     | hrjp     | yzxa     | omxa     | ktdm     | ttxz     |",
         "location": "index.ts"
       },
@@ -51167,6 +51448,9 @@
           "junfengP",
           "nczitzk"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "description": "**原创 BT 电影**\n\n  | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |\n  | -------- | ------------ | ------------ | ------------ | -------- | ------- | -------- | -------- | -------- | -------- | -------- |\n  | gcyc     | yzwmyc       | yzymyc       | gqzwzm       | sjxz     | vr      | srym     | omwm     | hgzb     | dmyc     | zhtl     |\n\n  **色花图片**\n\n  | 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | yczp     | ztzp     | hrjp     | yzxa     | omxa     | ktdm     | ttxz     |",
         "location": "index.ts"
       },
@@ -51184,6 +51468,9 @@
           "junfengP",
           "nczitzk"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "description": "**原创 BT 电影**\n\n  | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |\n  | -------- | ------------ | ------------ | ------------ | -------- | ------- | -------- | -------- | -------- | -------- | -------- |\n  | gcyc     | yzwmyc       | yzymyc       | gqzwzm       | sjxz     | vr      | srym     | omwm     | hgzb     | dmyc     | zhtl     |\n\n  **色花图片**\n\n  | 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | yczp     | ztzp     | hrjp     | yzxa     | omxa     | ktdm     | ttxz     |",
         "location": "index.ts"
       },
@@ -51201,6 +51488,9 @@
           "junfengP",
           "nczitzk"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "description": "**原创 BT 电影**\n\n  | 国产原创 | 亚洲无码原创 | 亚洲有码原创 | 高清中文字幕 | 三级写真 | VR 视频 | 素人有码 | 欧美无码 | 韩国主播 | 动漫原创 | 综合讨论 |\n  | -------- | ------------ | ------------ | ------------ | -------- | ------- | -------- | -------- | -------- | -------- | -------- |\n  | gcyc     | yzwmyc       | yzymyc       | gqzwzm       | sjxz     | vr      | srym     | omwm     | hgzb     | dmyc     | zhtl     |\n\n  **色花图片**\n\n  | 原创自拍 | 转贴自拍 | 华人街拍 | 亚洲性爱 | 欧美性爱 | 卡通动漫 | 套图下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | yczp     | ztzp     | hrjp     | yzxa     | omxa     | ktdm     | ttxz     |",
         "location": "index.ts"
       },

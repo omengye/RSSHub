@@ -384,6 +384,9 @@
   "/ally/rail/:category?/:topic?": [
     "Rongronggg9"
   ],
+  "/alpinelinux/pkgs/:name/:routeParams?": [
+    "CaoMeiYouRen"
+  ],
   "/alternativeto/platform/:name/:routeParams?": [
     "JimenezLi"
   ],
@@ -583,6 +586,9 @@
   ],
   "/bbcnewslabs/news": [
     "elxy"
+  ],
+  "/bc3ts/post/list/:sort?": [
+    "TonyRL"
   ],
   "/bdys/:caty?/:type?/:area?/:year?/:order?": [
     "nczitzk"
@@ -872,6 +878,12 @@
   "/bsky/profile/:handle": [
     "TonyRL"
   ],
+  "/bt0/mv/:number/:domain?": [
+    "miemieYaho"
+  ],
+  "/bt0/tlist/:sc/:domain?": [
+    "miemieYaho"
+  ],
   "/btzj/:category?": [
     "nczitzk"
   ],
@@ -1016,6 +1028,9 @@
   ],
   "/ccac/news/:type/:lang?": [
     "linbuxiao"
+  ],
+  "/cccfna/:category/:type?": [
+    "hualiong"
   ],
   "/ccf/news/:category?": [
     "nczitzk"
@@ -3400,6 +3415,9 @@
   "/keepass/": [
     "TonyRL"
   ],
+  "/kelownacapnews/:type": [
+    "hualiong"
+  ],
   "/kemono/:source?/:id?": [
     "nczitzk"
   ],
@@ -3840,6 +3858,9 @@
   "/mydrivers/:category{.+}?": [],
   "/mydrivers/rank/:range?": [
     "nczitzk"
+  ],
+  "/myfans/user/:username": [
+    "TonyRL"
   ],
   "/myfigurecollection/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?": [
     "nczitzk"
@@ -4942,6 +4963,9 @@
   ],
   "/sakurazaka46/news": [
     "nczitzk"
+  ],
+  "/samdnews/:typeId": [
+    "hualiong"
   ],
   "/samsung/research/blog": [
     "nczitzk"
