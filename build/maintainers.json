@@ -417,7 +417,7 @@
   "/apkpure/versions/:pkg/:region?": [
     "maple3142"
   ],
-  "/apnews/rss/:rss?": [
+  "/apnews/rss/:category?": [
     "zoenglinghou",
     "mjysci",
     "TonyRL"
@@ -479,6 +479,9 @@
     "TonyRL"
   ],
   "/asiantolick/:category{.+}?": [],
+  "/asmr-200/works/:order?/:subtitle?/:sort?": [
+    "hualiong"
+  ],
   "/asus/bios/:model": [
     "Fatpandac"
   ],
@@ -826,6 +829,9 @@
   ],
   "/bloomberg/:site?": [
     "bigfei"
+  ],
+  "/bluearchive/news/:server/:type?": [
+    "equt"
   ],
   "/bluestacks/release/5": [
     "TonyRL"
@@ -1949,6 +1955,9 @@
     "nczitzk"
   ],
   "/fda/cdrh/:titleOnly?": [],
+  "/fediverse/timeline/:account": [
+    "DIYgod"
+  ],
   "/feng/forum/:id/:type?": [
     "TonyRL"
   ],
@@ -2994,6 +3003,9 @@
   "/hypergryph/arknights/announce/:platform?/:group?": [
     "swwind"
   ],
+  "/hypergryph/arknights/arktca": [
+    "Bendancom"
+  ],
   "/hypergryph/arknights/japan": [
     "ofyark"
   ],
@@ -3114,6 +3126,9 @@
   ],
   "/instructables/projects/:category?": [
     "wolfg1969"
+  ],
+  "/investor/:category{.+}?": [
+    "nczitzk"
   ],
   "/ippa/": [
     "cnkmmk"
@@ -3720,6 +3735,9 @@
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],
+  "/meituan/tech": [
+    "ktKongTong"
+  ],
   "/metacritic/:type?/:sort?/:filter?": [],
   "/meteor/boards": [
     "TonyRL"
@@ -3737,6 +3755,9 @@
   "/microsoft/edge/addon/:crxid": [
     "hoilc",
     "DIYgod"
+  ],
+  "/microsoft/mcr/product/*": [
+    "margani"
   ],
   "/mihoyo/bbs/follow-list/:uid": [
     "CaoMeiYouRen"
@@ -3827,6 +3848,9 @@
   ],
   "/modrinth/project/:id/versions/:routeParams?": [
     "SettingDust"
+  ],
+  "/moduzy/:type/:hours?": [
+    "hualiong"
   ],
   "/mohw/clarification": [
     "nczitzk"
@@ -4357,8 +4381,12 @@
   "/olevod/vodlist": [
     "fang63625"
   ],
+  "/ollama/blog": [
+    "gavrilov"
+  ],
   "/ollama/library": [
-    "Nick22nd"
+    "Nick22nd",
+    "gavrilov"
   ],
   "/oncc/:language/:channel?": [
     "Fatpandac"
@@ -4878,6 +4906,9 @@
   ],
   "/rawkuma/manga/:id": [
     "nczitzk"
+  ],
+  "/raycast/changelog": [
+    "equt"
   ],
   "/reactiflux/transcripts": [
     "nczitzk"
@@ -6128,7 +6159,7 @@
     "jasongzy"
   ],
   "/usts/jwch/:type?": [],
-  "/utgd/:category?": [
+  "/utgd/category/:category?": [
     "nczitzk"
   ],
   "/utgd/timeline": [
