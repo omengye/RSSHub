@@ -4371,6 +4371,19 @@
       }
     ]
   },
+  "deadbydaylight.com": {
+    "_name": "DeadbyDaylight",
+    ".": [
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news"
+        ],
+        "target": "/deadbydaylight/news"
+      }
+    ]
+  },
   "deadline.com": {
     "_name": "Deadline",
     ".": [
@@ -10436,6 +10449,19 @@
           "/"
         ],
         "target": "/minecraft/version/:versionType?/:linkType?"
+      }
+    ]
+  },
+  "mirrormedia.mg": {
+    "_name": "鏡週刊 Mirror Media",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/mirrormedia/"
       }
     ]
   },
