@@ -20166,6 +20166,105 @@
       "new-media"
     ]
   },
+  "fashionnetwork": {
+    "routes": {
+      "/cn/lists/:id?": {
+        "path": "/cn/lists/:id?",
+        "name": "FashionNetwork 中国",
+        "url": "fashionnetwork.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/fashionnetwork/cn/lists/0",
+        "parameters": {
+          "category": "分类，默认为 0，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [独家新闻](https://fashionnetwork.cn)，网址为 `https://fashionnetwork.cn/lists/13.html`。截取 `https://fashionnetwork.cn/` 到末尾 `.html` 的部分 `13` 作为参数填入，此时路由为 [`/fashionnetwork/cn/lists/13`](https://rsshub.app/fashionnetwork/cn/lists/13)。\n  :::\n\n  | 分类                                           | ID                                                  |\n  | ---------------------------------------------- | --------------------------------------------------- |\n  | [独家](https://fashionnetwork.cn/lists/13)     | [13](https://rsshub.app/fashionnetwork/cn/lists/13) |\n  | [商业](https://fashionnetwork.cn/lists/1)      | [1](https://rsshub.app/fashionnetwork/cn/lists/1)   |\n  | [人物](https://fashionnetwork.cn/lists/8)      | [8](https://rsshub.app/fashionnetwork/cn/lists/8)   |\n  | [设计](https://fashionnetwork.cn/lists/3)      | [3](https://rsshub.app/fashionnetwork/cn/lists/3)   |\n  | [产业](https://fashionnetwork.cn/lists/5)      | [5](https://rsshub.app/fashionnetwork/cn/lists/5)   |\n  | [创新研究](https://fashionnetwork.cn/lists/6)  | [6](https://rsshub.app/fashionnetwork/cn/lists/6)   |\n  | [人事变动](https://fashionnetwork.cn/lists/12) | [12](https://rsshub.app/fashionnetwork/cn/lists/12) |\n  | [新闻资讯](https://fashionnetwork.cn/lists/11) | [11](https://rsshub.app/fashionnetwork/cn/lists/11) |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "fashionnetwork.cn/lists/:id"
+            ]
+          },
+          {
+            "title": "独家",
+            "source": [
+              "fashionnetwork.cn/lists/13"
+            ],
+            "target": "/cn/lists/13"
+          },
+          {
+            "title": "商业",
+            "source": [
+              "fashionnetwork.cn/lists/1"
+            ],
+            "target": "/cn/lists/1"
+          },
+          {
+            "title": "人物",
+            "source": [
+              "fashionnetwork.cn/lists/8"
+            ],
+            "target": "/cn/lists/8"
+          },
+          {
+            "title": "设计",
+            "source": [
+              "fashionnetwork.cn/lists/3"
+            ],
+            "target": "/cn/lists/3"
+          },
+          {
+            "title": "产业",
+            "source": [
+              "fashionnetwork.cn/lists/5"
+            ],
+            "target": "/cn/lists/5"
+          },
+          {
+            "title": "创新研究",
+            "source": [
+              "fashionnetwork.cn/lists/6"
+            ],
+            "target": "/cn/lists/6"
+          },
+          {
+            "title": "人事变动",
+            "source": [
+              "fashionnetwork.cn/lists/12"
+            ],
+            "target": "/cn/lists/12"
+          },
+          {
+            "title": "新闻资讯",
+            "source": [
+              "fashionnetwork.cn/lists/11"
+            ],
+            "target": "/cn/lists/11"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "FashionNetwork",
+    "url": "fashionnetwork.cn",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
+  },
   "fastbull": {
     "routes": {
       "/express-news": {
@@ -22868,6 +22967,38 @@
   },
   "github": {
     "routes": {
+      "/activity/:user": {
+        "path": "/activity/:user",
+        "name": "User Activities",
+        "maintainers": [
+          "hyoban"
+        ],
+        "example": "/github/activity/DIYgod",
+        "categories": [
+          "programming"
+        ],
+        "parameters": {
+          "user": "GitHub username"
+        },
+        "description": "Get the activities of a user on GitHub, based on the GitHub official RSS feed",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/:user"
+            ],
+            "target": "/activity/:user"
+          }
+        ],
+        "location": "activity.ts"
+      },
       "/branches/:user/:repo": {
         "path": "/branches/:user/:repo",
         "categories": [
@@ -31856,6 +31987,40 @@
     ],
     "description": ""
   },
+  "iplaysoft": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/iplaysoft",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.iplaysoft.com"
+            ]
+          }
+        ],
+        "name": "全部文章",
+        "maintainers": [
+          "williamgateszhao"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "异次元软件世界",
+    "url": "www.iplaysoft.com"
+  },
   "ippa": {
     "routes": {
       "/": {
@@ -32435,6 +32600,38 @@
     },
     "name": "西瓜视频",
     "url": "ixigua.com"
+  },
+  "j-test": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "公告",
+        "url": "www.j-test.com",
+        "maintainers": [
+          "kuhahku"
+        ],
+        "example": "/j-test/news",
+        "parameters": {},
+        "categories": [
+          "study"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.j-test.com"
+            ],
+            "target": "/news"
+          }
+        ],
+        "description": "",
+        "location": "news.ts"
+      }
+    },
+    "name": "实用日本语鉴定考试（J.TEST）",
+    "url": "www.j-test.com"
   },
   "jandan": {
     "routes": {
@@ -37035,6 +37232,38 @@
     "name": "四月网",
     "url": "news.m4.cn"
   },
+  "maccms": {
+    "routes": {
+      "/:domain/:type?/:size?": {
+        "path": "/:domain/:type?/:size?",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/maccms/moduzy.net/2",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "parameters": {
+          "domain": "采集站域名，可选值如下表",
+          "type": "类别ID，不同采集站点有不同的类别规则和ID，默认为 0，代表全部类别",
+          "size": "每次获取的数据条数，上限 100 条，默认 30 条"
+        },
+        "name": "最新资源",
+        "maintainers": [
+          "hualiong"
+        ],
+        "description": "\n:::tip\n每个采集站提供的影视类别ID是不同的，即参数中的 `type` 是不同的。**可以先访问一次站点提供的采集接口，然后从返回结果中的 `class` 字段中的 `type_id`获取相应的类别ID**\n:::\n\n| 站名                | 域名                                             | 站名             | 域名                                               | 站名           | 域名                                            |\n| ------------------- | ------------------------------------------------ | ---------------- | -------------------------------------------------- | -------------- | ----------------------------------------------- |\n| 魔都资源网          | [moduzy.net](https://moduzy.net)                 | 华为吧影视资源站 | [hw8.live](https://hw8.live)                       | 360 资源站     | [360zy.com](https://360zy.com)                  |\n| jkun 爱坤联盟资源网 | [ikunzyapi.com](https://ikunzyapi.com)           | 奥斯卡资源站     | [aosikazy.com](https://aosikazy.com)               | 飞速资源采集网 | [www.feisuzyapi.com](http://www.feisuzyapi.com) |\n| 森林资源网          | [slapibf.com](https://slapibf.com)               | 天空资源采集网   | [api.tiankongapi.com](https://api.tiankongapi.com) | 百度云资源     | [api.apibdzy.com](https://api.apibdzy.com)      |\n| 红牛资源站          | [www.hongniuzy2.com](https://www.hongniuzy2.com) | 乐视资源网       | [leshiapi.com](https://leshiapi.com)               | 暴风资源       | [bfzyapi.com](https://bfzyapi.com)              |",
+        "location": "index.ts"
+      }
+    },
+    "name": "通用影视采集站视频采集接口路由",
+    "description": "\n:::tip\n该路由适用于各大影视采集站对外提供的统一CMS视频采集接口，API 类似于 `https://网站域名/api.php/provide/vod`\n:::"
+  },
   "macfilos": {
     "routes": {
       "/blog": {
@@ -38044,7 +38273,7 @@
         "maintainers": [
           "CaoMeiYouRen"
         ],
-        "description": "| 键          | 含义                                  | 接受的值                                                             | 默认值       |\n  | ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |\n  | forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |\n  | cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |\n  | rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |\n  | lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |\n\n  游戏缩写（目前绝区零还没有同人榜\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ |\n  | bh3    | ys   | bh2    | wd         | sr       | dby    |\n\n  主榜类型\n\n  | 同人榜  | COS 榜 |\n  | ------- | ------ |\n  | tongren | cos    |\n\n  子榜类型\n\n  崩坏三 子榜\n\n  | 插画         | 漫画  | COS |\n  | ------------ | ----- | --- |\n  | illustration | comic | cos |\n\n  原神 子榜\n\n  | 插画         | 漫画  | Q 版 | 手工   |\n  | ------------ | ----- | ---- | ------ |\n  | illustration | comic | qute | manual |\n\n  排行榜类型\n\n  | 日榜  | 周榜   | 月榜    |\n  | ----- | ------ | ------- |\n  | daily | weekly | monthly |",
+        "description": "| 键          | 含义                                  | 接受的值                                                             | 默认值       |\n  | ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |\n  | forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |\n  | cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |\n  | rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |\n  | lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |\n\n  游戏缩写\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 | 绝区零 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ | ------ |\n  | bh3    | ys   | bh2    | wd         | sr       | dby    | zzz    |\n\n  主榜类型\n\n  | 同人榜  | COS 榜 |\n  | ------- | ------ |\n  | tongren | cos    |\n\n  子榜类型\n\n  崩坏三 子榜\n\n  | 插画         | 漫画  | COS |\n  | ------------ | ----- | --- |\n  | illustration | comic | cos |\n\n  原神 子榜\n\n  | 插画         | 漫画  | Q 版 | 手工   |\n  | ------------ | ----- | ---- | ------ |\n  | illustration | comic | qute | manual |\n\n  排行榜类型\n\n  | 日榜  | 周榜   | 月榜    |\n  | ----- | ------ | ------- |\n  | daily | weekly | monthly |",
         "location": "bbs/img-ranking.ts"
       },
       "/bbs/official/:gids/:type?/:page_size?/:last_id?": {
@@ -38916,58 +39145,6 @@
     },
     "name": "Modrinth",
     "url": "modrinth.com"
-  },
-  "moduzy": {
-    "routes": {
-      "/:type/:hours?": {
-        "path": "/:type/:hours?",
-        "categories": [
-          "multimedia"
-        ],
-        "example": "/moduzy/2",
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "parameters": {
-          "type": "类别ID，具体见下表，为 0 代表全部类别",
-          "hours": "获取截止到几小时前的数据，默认不限"
-        },
-        "radar": [
-          {
-            "source": [
-              "moduzy.cc",
-              "moduzy.net",
-              "moduzy.com",
-              "moduzy1.com",
-              "moduzy2.com",
-              "moduzy3.com",
-              "moduzy4.com",
-              "moduzy5.com",
-              "moduzy6.com",
-              "moduzy7.com",
-              "moduzy8.com",
-              "moduzy9.com",
-              "moduzy10.com"
-            ]
-          }
-        ],
-        "name": "最新资源",
-        "maintainers": [
-          "hualiong"
-        ],
-        "url": "moduzy.net",
-        "description": "\n:::warning\n不建议订阅**全部类别**和**国产动漫**，因为该类型每天的更新量会大幅超过单次抓取的最大上限20条而被截断（**温馨提醒**：该资源网以**动漫资源**为主，部分影视类别可能会没有资源）\n:::\n\n| 类别 | ID | 类别 | ID | 类别 | ID | 类别 | ID |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 国产动漫 | 1 | 日韩动漫 | 2 | 欧美动漫 | 3 | 港台动漫 | 4 |\n| 动漫电影 | 5 | 里番动漫 | 6 | 动作片 | 10 | 喜剧片 | 11 |\n| 爱情片 | 12 | 科幻片 | 13 | 恐怖片 | 14 | 剧情片 | 15 |\n| 战争片 | 16 | 惊悚片 | 17 | 家庭片 | 18 | 古装片 | 19 |\n| 历史片 | 20 | 悬疑片 | 21 | 犯罪片 | 22 | 灾难片 | 23 |\n| 记录片 | 24 | 短片 | 25 | 国产剧 | 26 | 香港剧 | 27 |\n| 韩国剧 | 28 | 欧美剧 | 29 | 台湾剧 | 30 | 日本剧 | 31 |\n| 海外剧 | 32 | 泰国剧 | 33 | 大陆综艺 | 34 | 港台综艺 | 35 |\n| 日韩综艺 | 36 | 欧美综艺 | 37 | 全部类别 | 0 |  |  |",
-        "location": "index.ts"
-      }
-    },
-    "name": "魔都资源网",
-    "url": "www.moduzy.com",
-    "description": "\n:::tip\n魔都资源网有多个备用域名，路由默认使用域名 `moduzy.net` 确保在中国大陆内的实例也能访问。如果你想直接访问源站可以通过以下域名：\n\n- moduzy.com（主域名，大陆内无法访问）\n- moduzy.cc\n- moduzy.net\n- moduzy1.com - moduzy10.com（均可访问）\n\n官方的导航页：[moduzy.vip](https://www.moduzy.vip)\n:::"
   },
   "mohw": {
     "routes": {
@@ -40574,46 +40751,153 @@
   },
   "neea": {
     "routes": {
-      "/:type?": {
-        "path": "/:type?",
-        "name": "Unknown",
+      "/local/:type": {
+        "path": "/local/:type",
+        "name": "国内考试动态",
+        "url": "www.neea.edu.cn",
         "maintainers": [
           "SunShinenny"
         ],
-        "location": "index.ts"
-      },
-      "/jlpt": {
-        "path": "/jlpt",
+        "example": "/neea/local/cet",
+        "parameters": {
+          "type": "考试项目，见下表"
+        },
         "categories": [
           "study"
         ],
-        "example": "/neea/jlpt",
-        "parameters": {},
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "title": "普通高考动态",
+            "source": [
+              "gaokao.neea.edu.cn",
+              "gaokao.neea.cn"
+            ],
+            "target": "/local/gaokao"
+          },
+          {
+            "title": "成人高考动态",
+            "source": [
+              "chengkao.neea.edu.cn",
+              "chengkao.neea.cn"
+            ],
+            "target": "/local/chengkao"
+          },
+          {
+            "title": "研究生考试动态",
+            "source": [
+              "yankao.neea.edu.cn",
+              "yankao.neea.cn"
+            ],
+            "target": "/local/yankao"
+          },
+          {
+            "title": "自学考试动态",
+            "source": [
+              "zikao.neea.edu.cn",
+              "zikao.neea.cn"
+            ],
+            "target": "/local/zikao"
+          },
+          {
+            "title": "中小学教师资格考试动态",
+            "source": [
+              "ntce.neea.edu.cn",
+              "ntce.neea.cn"
+            ],
+            "target": "/local/ntce"
+          },
+          {
+            "title": "同等学力申请硕士学位考试动态",
+            "source": [
+              "tdxl.neea.edu.cn",
+              "tdxl.neea.cn"
+            ],
+            "target": "/local/tdxl"
+          },
+          {
+            "title": "全国四六级考试（CET）动态",
+            "source": [
+              "cet.neea.edu.cn",
+              "cet.neea.cn"
+            ],
+            "target": "/local/cet"
+          },
+          {
+            "title": "全国计算机等级考试（NCRE）动态",
+            "source": [
+              "ncre.neea.edu.cn",
+              "ncre.neea.cn"
+            ],
+            "target": "/local/ncre"
+          },
+          {
+            "title": "全国计算机应用水平考试（NIT）动态",
+            "source": [
+              "nit.neea.edu.cn",
+              "nit.neea.cn"
+            ],
+            "target": "/local/nit"
+          },
+          {
+            "title": "全国英语等级考试（PETS）动态",
+            "source": [
+              "pets.neea.edu.cn",
+              "pets.neea.cn"
+            ],
+            "target": "/local/pets"
+          },
+          {
+            "title": "全国外语水平考试（WSK）动态",
+            "source": [
+              "wsk.neea.edu.cn",
+              "wsk.neea.cn"
+            ],
+            "target": "/local/wsk"
+          },
+          {
+            "title": "书画等级考试（CCPT）动态",
+            "source": [
+              "ccpt.neea.edu.cn",
+              "ccpt.neea.cn"
+            ],
+            "target": "/local/ccpt"
+          }
+        ],
+        "description": "|              | 考试项目                      | type     |\n| ------------ | ----------------------------- | -------- |\n| 国家教育考试 | 普通高考                      | gaokao   |\n|              | 成人高考                      | chengkao |\n|              | 研究生考试                    | yankao   |\n|              | 自学考试                      | zikao    |\n|              | 中小学教师资格考试            | ntce     |\n|              | 同等学力申请硕士学位考试      | tdxl     |\n| 社会证书考试 | 全国四六级考试（CET）         | cet      |\n|              | 全国计算机等级考试（NCRE）    | ncre     |\n|              | 全国计算机应用水平考试（NIT） | nit      |\n|              | 全国英语等级考试（PETS）      | pets     |\n|              | 全国外语水平考试（WSK）       | wsk      |\n|              | 书画等级考试（CCPT）          | ccpt     |",
+        "location": "index.ts"
+      },
+      "/global/jlpt": {
+        "path": "/global/jlpt",
+        "name": "日本语能力测试(JLPT)通知",
+        "url": "jlpt.neea.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/neea/global/jlpt",
+        "parameters": {},
+        "categories": [
+          "study"
+        ],
+        "features": {
+          "supportRadar": true
         },
         "radar": [
           {
             "source": [
-              "jlpt.neea.cn/"
-            ]
+              "jlpt.neea.edu.cn",
+              "jlpt.neea.cn"
+            ],
+            "target": "/global/jlpt"
           }
         ],
-        "name": "教育部考试中心日本语能力测试重要通知",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "url": "jlpt.neea.cn/",
         "location": "jlpt.ts"
       }
     },
-    "name": "NEEA 中国教育考试网",
-    "url": "jlpt.neea.cn"
+    "name": "中国教育考试网",
+    "url": "www.neea.edu.cn"
   },
   "nenu": {
     "routes": {
@@ -49994,6 +50278,50 @@
     "name": "Readhub",
     "url": "readhub.cn"
   },
+  "readwise": {
+    "routes": {
+      "/list/:routeParams?": {
+        "path": "/list/:routeParams?",
+        "categories": [
+          "reading"
+        ],
+        "example": "/readwise/list/location=new&category=article",
+        "parameters": {
+          "routeParams": "Parameter combinations, see the description above."
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "READWISE_ACCESS_TOKEN",
+              "optional": false,
+              "description": "Visit `https://readwise.io/access_token` to get your access token."
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "read.readwise.io"
+            ],
+            "target": "/list"
+          }
+        ],
+        "name": "Reader Document List",
+        "maintainers": [
+          "xbot"
+        ],
+        "description": "Specify options (in the format of query string) in parameter `routeParams` to filter documents.\n\n| Parameter                  | Description                                                                            |   Values                                                                                    |  Default                             |\n| -------------------------- | -------------------------------------------------------------------------------------- |   ----------------------------------------------------------------------------------------- |  ----------------------------------- |\n| `location`               | The document's location.                                                               |   `new`/`later`/`shortlist`/`archive`/`feed`                                      |                                      |\n| `category`               | The document's category.                                                               |   `article`/`email`/`rss`/`highlight`/`note`/`pdf`/`epub`/`tweet`/`video` |                                      |\n| `updatedAfter`           | Fetch only documents updated after this date.                                          |   string (formatted as ISO 8601 date)                                                       ||\n| `tag`                    | The document's tag, can be specified once or multiple times.                           |||\n| `tagStrategy`            | If multiple tags are specified, should the documents match all of them or any of them. |   `any`/`all`                                                                           |  `any`                             |\n\nCustomise parameter values to fetch specific documents, for example:\n\n```\nhttps://rsshub.app/readwise/list/location=new&category=article\n```\n\nfetches articles in the Inbox.\n\n```\nhttps://rsshub.app/readwise/list/category=article&tag=shortlist&tag=AI&tagStrategy=all\n```\n\nfetches articles tagged both by `shortlist` and `AI`. ",
+        "location": "list.ts"
+      }
+    },
+    "name": "Readwise",
+    "url": "readwise.io"
+  },
   "remnote": {
     "routes": {
       "/changelog": {
@@ -59153,6 +59481,31 @@
     "name": "ThoughtCo",
     "url": "thoughtco.com"
   },
+  "thoughtworks": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/thoughtworks/blog",
+        "radar": [
+          {
+            "source": [
+              "www.thoughtworks.com/zh-cn/insights/blog"
+            ]
+          }
+        ],
+        "name": "Inside Blog",
+        "maintainers": [
+          "Hyvi"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "ThoughtWorks",
+    "url": "www.thoughtworks.com/zh-cn/insights/blog"
+  },
   "threads": {
     "routes": {
       "/:user/:routeParams?": {
@@ -66462,6 +66815,10 @@
             {
               "name": "XSIJISHE_COOKIE",
               "description": ""
+            },
+            {
+              "name": "XSIJISHE_USER_AGENT",
+              "description": ""
             }
           ],
           "requirePuppeteer": false,
@@ -66487,7 +66844,16 @@
           "type": "排行榜类型: weekly | monthly"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "XSIJISHE_COOKIE",
+              "description": ""
+            },
+            {
+              "name": "XSIJISHE_USER_AGENT",
+              "description": ""
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -66945,8 +67311,8 @@
         ],
         "example": "/yahoo/news/hk/world",
         "parameters": {
-          "region": "Region, see the table below",
-          "category": "Category, see the table below"
+          "region": "Region, `hk/tw/au/ca/fr/malaysia/nz/sg/uk/en(us)`, the part represented by the asterisk (*) in *.news.yahoo.com",
+          "category": "Category, The part represented by the asterisk (*) in .news.yahoo.com/rss/*, region \"hk/tw\" differs, see the description below"
         },
         "features": {
           "requireConfig": false,
@@ -66959,26 +67325,31 @@
         "radar": [
           {
             "source": [
-              "yahoo.com/"
+              "news.yahoo.com/"
             ]
           }
         ],
         "name": "News",
         "maintainers": [
-          "KeiLongW"
+          "KeiLongW",
+          "williamgateszhao"
         ],
-        "url": "yahoo.com/",
-        "description": "`Region`\n\n  | Hong Kong | Taiwan | US |\n  | --------- | ------ | -- |\n  | hk        | tw     | en |\n\n  <details>\n    <summary>`Category` (Hong Kong)</summary>\n\n    | 全部     | 港聞      | 兩岸國際 | 財經     | 娛樂          | 體育   | 健康   | 親子      | 副刊       |\n    | -------- | --------- | -------- | -------- | ------------- | ------ | ------ | --------- | ---------- |\n    | （留空） | hong-kong | world    | business | entertainment | sports | health | parenting | supplement |\n  </details>\n\n  <details>\n    <summary>`Category` (Taiwan)</summary>\n\n    | 全部     | 政治     | 財經    | 娛樂          | 運動   | 社會地方 | 國際  | 生活      | 健康   | 科技       | 品味  |\n    | -------- | -------- | ------- | ------------- | ------ | -------- | ----- | --------- | ------ | ---------- | ----- |\n    | （留空） | politics | finance | entertainment | sports | society  | world | lifestyle | health | technology | style |\n  </details>\n\n  <details>\n    <summary>`Category` (US)</summary>\n\n    | All     | World | Business | Entertainment | Sports | Health |\n    | ------- | ----- | -------- | ------------- | ------ | ------ |\n    | (Empty) | world | business | entertainment | sports | health |\n  </details>",
-        "location": "news/tw/index.ts"
+        "url": "news.yahoo.com/",
+        "description": "\n`Region`\n\nSupport all regions represented by the asterisk (*) in *.news.yahoo.com, such as hk/tw/au/ca/fr/malaysia/nz/sg/uk/en(us). For www.yahoo.com, use en or us. Sites with news domains other than *.news.yahoo.com, such as de.nachrichten.yahoo.com or news.yahoo.co.jp, are not supported.\n\n`Category`\n\nThe parsing method for Yahoo Hong Kong and Taiwan is quite unique. All supported categories are as follows\n\nCategory for hk.news.yahoo.com (hongkong)\n\n| 全部     | 港聞      | 兩岸國際 | 財經      | 娛樂          | 體育   | 健康   | 親子       | 副刊       |\n| ------- | --------- | -------- | -------- | ------------- | ------ | ------ | --------- | ---------- |\n| (empty) | hong-kong | world    | business | entertainment | sports | health | parenting | supplement |\n\nCategory for tw.news.yahoo.com (taiwan)\n\n| 全部     | 政治     | 財經    | 娛樂          | 運動    | 社會地方 | 國際   | 生活      | 健康   | 科技        | 品味  |\n| ------- | -------- | ------- | ------------- | ------ | -------- | ----- | --------- | ------ | ---------- | ----- |\n| (empty) | politics | finance | entertainment | sports | society  | world | lifestyle | health | technology | style |\n\nOther Yahoo news is fetched from the RSS provided by Yahoo. Please refer to the categories displayed on the pages of *.news.yahoo.com (for example, \"world\"), and try to access *.news.yahoo.com/rss/world to see if it is accessible and contains recent news (some categories exist but are not updated). If it is accessible and has recent news, then that category can be used on the corresponding site. For example, the available categories for news.yahoo.com are as follows\n\nCategory for news.yahoo.com (US)\n\n| All     | US | Politics | World | Science | Tech |\n| ------- | -- | -------- | ----- | ------- | ---- |\n| (empty) | us | politics | world | science | tech |\n\nTo give another example, since uk.news.yahoo.com/rss/ukoriginal is accessible and has recent news, /yahoo/news/uk/ukoriginal is a valid RSSHub route.\n\n`author`\n\nFor Yahoo Hong Kong and Yahoo Taiwan, please use another \"news source\" route.\n\nFor other Yahoo News, this route's RSS provides the author field. You can use RSSHub's built-in \"content filtering\" feature. For example, /yahoo-wg/news/tw/technology?filter_author=Yahoo%20Tech|Engadget can filter out news with authors containing Yahoo Tech or Engadget from Yahoo Taiwan's technology news, which is the Chinese version of Engadget.\n",
+        "zh": {
+          "name": "新闻",
+          "description": "\n`区域 Region`\n\n支持所有 *.news.yahoo.com 中*号所代表的区域, 例如`hk/tw/au/ca/fr/malaysia/nz/sg/uk/en(us)`, 其中 www.yahoo.com 用 en 或 us 来表示。不支持新闻域名不为 *.news.yahoo.com 的站点如 de.nachrichten.yahoo.com 或 news.yahoo.co.jp。\n\n`分类 Category`\n\n香港和台湾雅虎的读取方式比较特别, 所有支持的 category 如下\n\nhk.news.yahoo.com (香港) 所支持的分类\n\n| 全部     | 港聞      | 兩岸國際 | 財經      | 娛樂          | 體育   | 健康   | 親子       | 副刊       |\n| ------- | --------- | -------- | -------- | ------------- | ------ | ------ | --------- | ---------- |\n| （留空） | hong-kong | world    | business | entertainment | sports | health | parenting | supplement |\n\ntw.news.yahoo.com (台湾) 所支持的分类\n\n| 全部     | 政治     | 財經    | 娛樂          | 運動    | 社會地方 | 國際   | 生活      | 健康   | 科技        | 品味  |\n| ------- | -------- | ------- | ------------- | ------ | -------- | ----- | --------- | ------ | ---------- | ----- |\n| （留空） | politics | finance | entertainment | sports | society  | world | lifestyle | health | technology | style |\n\n其他雅虎新闻读取自 yahoo 提供的 RSS, 请根据 *.news.yahoo.com 的页面上展示的分类(例如 world ), 尝试 *.news.yahoo.com/rss/world 能否访问并且有近期的新闻(有些分类存在但未更新), 如果可以的话则该分类可以用在相应站点, 例如 news.yahoo.com 可用的分类如下\n\nnews.yahoo.com (美国) 所支持的分类\n\n| All     | US | Politics | World | Science | Tech |\n| ------- | -- | -------- | ----- | ------- | ---- |\n| (留空)  | us | politics | world | science | tech |\n\n再举例, 由于 uk.news.yahoo.com/rss/ukoriginal 可以访问并且有较新的新闻, 所以 /yahoo/news/uk/ukoriginal 是一个有效的RSSHub路由。\n\n`作者 author`\n\n对于香港和台湾雅虎, 请使用另一个\"新聞來源\"路由。\n\n对于其他雅虎新闻, 本路由的 RSS 中提供了 author 字段, 可使用 RSSHub 的内置\"内容过滤\"功能, 例如 /yahoo-wg/news/tw/technology?filter_author=Yahoo%20Tech|Engadget 可从台湾雅虎的科技新闻中过滤出作者名称中包含 Yahoo Tech 或者 Engadget 的新闻, 即瘾科技中文版。\n"
+        },
+        "location": "news/index.ts"
       },
-      "/news/providers/:region": {
-        "path": "/news/providers/:region",
+      "/news/providers/:region/list": {
+        "path": "/news/providers/:region/list",
         "categories": [
           "new-media"
         ],
-        "example": "/yahoo/news/providers/tw",
+        "example": "/yahoo/news/providers/tw/list",
         "parameters": {
-          "region": "地區，見上表"
+          "region": "地区, 同路由\"新闻来源\"中的支持地区, 即 hk 或 tw"
         },
         "features": {
           "requireConfig": false,
@@ -66988,21 +67359,30 @@
           "supportPodcast": false,
           "supportScihub": false
         },
+        "radar": [
+          {
+            "source": [
+              "hk.news.yahoo.com/",
+              "tw.news.yahoo.com/"
+            ]
+          }
+        ],
         "name": "新聞來源列表",
         "maintainers": [
-          "TonyRL"
+          "TonyRL",
+          "williamgateszhao"
         ],
-        "location": "news/tw/provider-helper.ts"
+        "location": "news/provider-helper.ts"
       },
       "/news/provider/:region/:providerId": {
         "path": "/news/provider/:region/:providerId",
         "categories": [
           "new-media"
         ],
-        "example": "/yahoo/news/provider/tw/udn.com",
+        "example": "/yahoo/news/provider/tw/yahoo_tech_tw_942",
         "parameters": {
-          "region": "地區，見下表",
-          "providerId": "新聞來源 ID，可透過下方新聞來源列表獲得"
+          "region": "地區, hk 或 tw, 分别表示香港雅虎和台湾雅虎",
+          "providerId": "新聞來源 ID, 可透過路由\"新聞來源列表\"獲得"
         },
         "features": {
           "requireConfig": false,
@@ -67012,18 +67392,21 @@
           "supportPodcast": false,
           "supportScihub": false
         },
+        "radar": [
+          {
+            "source": [
+              "hk.news.yahoo.com/",
+              "tw.news.yahoo.com/"
+            ]
+          }
+        ],
         "name": "新聞來源",
         "maintainers": [
-          "TonyRL"
+          "TonyRL",
+          "williamgateszhao"
         ],
-        "description": "| 香港 | 台灣 |\n  | ---- | ---- |\n  | hk   | tw   |",
-        "location": "news/tw/provider.ts"
-      },
-      "/news/en/:category?": {
-        "path": "/news/en/:category?",
-        "name": "Unknown",
-        "maintainers": [],
-        "location": "news/us/index.ts"
+        "description": "\n`Region`\n\n| 香港 | 台灣 |\n| ---- | ---- |\n| hk   | tw   |\n\n`ProviderId`\n\n除了可以通过路由\"新聞來源列表\"获得外, 也可通过 hk.news.yahoo.com/archive 和 tw.news.yahoo.com/archive 选择\"新闻来源\"后通过页面 Url 来获得。\n\n例如 hk.news.yahoo.com/yahoo_movies_hk_660--所有分類/archive, `yahoo_movies_hk_660` 就是 ProviderId 。\n",
+        "location": "news/provider.ts"
       }
     },
     "name": "Yahoo",

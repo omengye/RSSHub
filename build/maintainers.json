@@ -1951,6 +1951,9 @@
   "/farmatters/:type/:id/:locale?": [
     "nczitzk"
   ],
+  "/fashionnetwork/cn/lists/:id?": [
+    "nczitzk"
+  ],
   "/fastbull/express-news": [
     "nczitzk"
   ],
@@ -2205,6 +2208,9 @@
   ],
   "/gitee/events/:username": [
     "TonyRL"
+  ],
+  "/github/activity/:user": [
+    "hyoban"
   ],
   "/github/branches/:user/:repo": [
     "max-arnold"
@@ -3136,6 +3142,9 @@
   "/investor/:category{.+}?": [
     "nczitzk"
   ],
+  "/iplaysoft/": [
+    "williamgateszhao"
+  ],
   "/ippa/": [
     "cnkmmk"
   ],
@@ -3196,6 +3205,9 @@
     "FeCCC"
   ],
   "/ixigua/user/video/:uid/:disableEmbed?": [],
+  "/j-test/news": [
+    "kuhahku"
+  ],
   "/jandan/": [
     "nczitzk",
     "bigfei"
@@ -3662,6 +3674,9 @@
     "Kiotlin"
   ],
   "/m4/:id?/:category{.+}?": [],
+  "/maccms/:domain/:type?/:size?": [
+    "hualiong"
+  ],
   "/macfilos/blog": [
     "nczitzk"
   ],
@@ -3858,9 +3873,6 @@
   "/modrinth/project/:id/versions/:routeParams?": [
     "SettingDust"
   ],
-  "/moduzy/:type/:hours?": [
-    "hualiong"
-  ],
   "/mohw/clarification": [
     "nczitzk"
   ],
@@ -3989,10 +4001,10 @@
   "/neatdownloadmanager/download/:os?": [
     "nczitzk"
   ],
-  "/neea/:type?": [
+  "/neea/local/:type": [
     "SunShinenny"
   ],
-  "/neea/jlpt": [
+  "/neea/global/jlpt": [
     "nczitzk"
   ],
   "/nenu/sohac/*": [],
@@ -4943,6 +4955,9 @@
     "nczitzk",
     "Fatpandac"
   ],
+  "/readwise/list/:routeParams?": [
+    "xbot"
+  ],
   "/remnote/changelog": [
     "TonyRL",
     "amakerlife"
@@ -5845,6 +5860,9 @@
   "/thoughtco/:category?": [
     "nczitzk"
   ],
+  "/thoughtworks/blog": [
+    "Hyvi"
+  ],
   "/threads/:user/:routeParams?": [
     "ninboy"
   ],
@@ -6627,15 +6645,17 @@
   ],
   "/xyzrank/:category?": [],
   "/yahoo/news/:region/:category?": [
-    "KeiLongW"
+    "KeiLongW",
+    "williamgateszhao"
   ],
-  "/yahoo/news/providers/:region": [
-    "TonyRL"
+  "/yahoo/news/providers/:region/list": [
+    "TonyRL",
+    "williamgateszhao"
   ],
   "/yahoo/news/provider/:region/:providerId": [
-    "TonyRL"
+    "TonyRL",
+    "williamgateszhao"
   ],
-  "/yahoo/news/en/:category?": [],
   "/yamibo/bbs/forum/:fid/:type?": [
     "KarasuShin"
   ],
