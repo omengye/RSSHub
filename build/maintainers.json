@@ -500,6 +500,9 @@
   "/auto-stats/:category?": [
     "nczitzk"
   ],
+  "/autocentre/": [
+    "driversti"
+  ],
   "/baai/hub/events": [
     "TonyRL"
   ],
@@ -1103,6 +1106,9 @@
   "/cfachina/servicesupport/analygarden/:program?": [
     "TonyRL"
   ],
+  "/cffex/announcement": [
+    "ChenXiangcheng1"
+  ],
   "/cfmmc/:id{.+}?": [],
   "/cfr/:category/:subCategory?": [
     "KarasuShin"
@@ -1163,6 +1169,9 @@
     "yuxinliu-alex"
   ],
   "/chinawriter/:id{.+}?": [],
+  "/chlinlearn/daily-blog": [
+    "huyyi"
+  ],
   "/chsi/hotnews": [
     "yanbot-team"
   ],
@@ -3132,6 +3141,12 @@
   "/inoreader/rss/:user/:tag": [
     "EthanWng97"
   ],
+  "/inspirehep/authors/:id": [
+    "TonyRL"
+  ],
+  "/inspirehep/literature/:q": [
+    "TonyRL"
+  ],
   "/instagram/:category/:key": [
     "oppilate",
     "DIYgod"
@@ -4346,27 +4361,33 @@
   ],
   "/nyaa/search/:query?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nyaa/user/:username?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nyaa/user/:username/search/:query?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nyaa/sukebei/search/:query?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nyaa/sukebei/user/:username?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nyaa/sukebei/user/:username/search/:query?": [
     "Lava-Swimmer",
-    "noname1776"
+    "noname1776",
+    "camera-2018"
   ],
   "/nymity/censorbib": [
     "xtexChooser"
@@ -4997,6 +5018,9 @@
   ],
   "/rsc/journal/:id/:category?": [
     "nczitzk"
+  ],
+  "/rss3/:account/:network?/:tag?": [
+    "DIYgod"
   ],
   "/rsshub/routes/:lang?": [
     "DIYgod"
@@ -6231,6 +6255,9 @@
   "/v2ex/topics/:type": [
     "WhiteWorld"
   ],
+  "/v2ex/xna": [
+    "luckyscript"
+  ],
   "/v2rayshare/": [
     "77taibai"
   ],
@@ -6657,6 +6684,11 @@
     "KeiLongW",
     "williamgateszhao"
   ],
+  "/yahoo/news/list/:region/:listId": [
+    "TonyRL",
+    "williamgateszhao",
+    "tpnonthealps"
+  ],
   "/yahoo/news/providers/:region/list": [
     "TonyRL",
     "williamgateszhao"
@@ -6864,9 +6896,6 @@
   ],
   "/zhihu/hot/:category?": [
     "nczitzk"
-  ],
-  "/zhihu/hotlist": [
-    "DIYgod"
   ],
   "/zhihu/posts/:usertype/:id": [
     "whtsky",
