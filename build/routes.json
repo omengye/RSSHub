@@ -56267,8 +56267,7 @@
         "name": "Journal",
         "maintainers": [
           "Derekmini",
-          "TonyRL",
-          "xiahaoyun"
+          "TonyRL"
         ],
         "location": "journal.ts"
       }

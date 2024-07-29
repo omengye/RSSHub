@@ -5488,8 +5488,7 @@
   ],
   "/springer/journal/:journal": [
     "Derekmini",
-    "TonyRL",
-    "xiahaoyun"
+    "TonyRL"
   ],
   "/sputniknews/:category?/:language?": [
     "nczitzk"
