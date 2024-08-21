@@ -11965,9 +11965,9 @@
         "title": "The New Yorker",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
-          "/:category"
+          "/feed/:category/:subCategory"
         ],
-        "target": "/newyorker/:category"
+        "target": "/newyorker/:category/:subCategory?"
       }
     ]
   },
@@ -17436,19 +17436,6 @@
           "/"
         ],
         "target": "/topys/:keyword?"
-      }
-    ]
-  },
-  "towardsdatascience.com": {
-    "_name": "Towards Data Science",
-    ".": [
-      {
-        "title": "Towards Data Science",
-        "docs": "https://docs.rsshub.app/routes/blog",
-        "source": [
-          "/"
-        ],
-        "target": "/towardsdatascience/latest"
       }
     ]
   },
