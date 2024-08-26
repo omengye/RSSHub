@@ -19203,7 +19203,7 @@
         "maintainers": [
           "syzq"
         ],
-        "description": "| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |\n  | -------------- | ----------- | ------------ | -------- | -------- |\n  | strategyreport | macresearch | brokerreport | industry | stock    |",
+        "description": "| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 |\n  | -------------- | ----------- | ------------ | -------- |\n  | strategyreport | macresearch | brokerreport | industry |",
         "location": "report/index.ts"
       },
       "/search/:keyword": {
@@ -22093,32 +22093,6 @@
     "name": "FT 中文网",
     "url": "ftchinese.com"
   },
-  "ftm": {
-    "routes": {
-      "/": {
-        "path": "/",
-        "categories": [
-          "new-media"
-        ],
-        "example": "/ftm",
-        "parameters": {},
-        "name": "文章",
-        "maintainers": [
-          "dzx-dzx"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.ftm.eu"
-            ]
-          }
-        ],
-        "location": "index.ts"
-      }
-    },
-    "name": "Follow The Money",
-    "url": "www.ftm.eu"
-  },
   "fuliba": {
     "routes": {
       "/latest": {
@@ -22415,44 +22389,6 @@
     },
     "name": "福州地铁",
     "url": "www.fzmtr.com"
-  },
-  "galxe": {
-    "routes": {
-      "/quest/:alias": {
-        "path": "/quest/:alias",
-        "name": "Quest",
-        "url": "app.galxe.com",
-        "maintainers": [
-          "cxheng315"
-        ],
-        "example": "/galxe/quest/MissionWeb3",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "app.galxe.com/quest/:alias"
-            ],
-            "target": "/quest/:alias"
-          }
-        ],
-        "location": "index.ts"
-      }
-    },
-    "name": "Galxe",
-    "url": "app.galxe.com",
-    "zh": {
-      "name": "銀河"
-    }
   },
   "gameapps": {
     "routes": {
@@ -27619,47 +27555,6 @@
     "name": "Grub Street",
     "url": "grubstreet.com"
   },
-  "gs": {
-    "routes": {
-      "/developer/blog": {
-        "path": "/developer/blog",
-        "categories": [
-          "blog"
-        ],
-        "example": "/gs/developer/blog",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "developer.gs.com/blog/posts"
-            ],
-            "target": "/developer/blog"
-          }
-        ],
-        "name": "Goldman Sachs Developer Blog",
-        "zh": {
-          "name": "高盛开发者博客"
-        },
-        "maintainers": [
-          "chesha1"
-        ],
-        "location": "developer/blog.ts"
-      }
-    },
-    "name": "Goldman Sachs",
-    "url": "goldmansachs.com",
-    "zh": {
-      "name": "高盛"
-    }
-  },
   "guancha": {
     "routes": {
       "/headline": {
@@ -32219,35 +32114,6 @@
     },
     "name": "IMDb",
     "url": "www.imdb.com"
-  },
-  "imhcg": {
-    "routes": {
-      "/": {
-        "path": "/",
-        "categories": [
-          "blog"
-        ],
-        "view": 5,
-        "example": "/",
-        "parameters": {},
-        "radar": [
-          {
-            "source": [
-              "infos.imhcg.cn"
-            ]
-          }
-        ],
-        "name": "Engineering blogs",
-        "maintainers": [
-          "ZiHao256"
-        ],
-        "url": "https://infos.imhcg.cn/",
-        "location": "blog.ts"
-      }
-    },
-    "name": "imhcg的信息站",
-    "url": "infos.imhcg.cn",
-    "description": "包含多种技术和新闻信息的网站"
   },
   "imiker": {
     "routes": {
@@ -37298,73 +37164,6 @@
     },
     "name": "LINE",
     "url": "today.line.me"
-  },
-  "link3": {
-    "routes": {
-      "/events": {
-        "path": "/events",
-        "name": "Link3 Events",
-        "url": "link3.to",
-        "maintainers": [
-          "cxheng315"
-        ],
-        "example": "/link3/events",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "link3.to/events"
-            ],
-            "target": "/events"
-          }
-        ],
-        "location": "events.ts"
-      },
-      "/profile/:handle": {
-        "path": "/profile/:handle",
-        "name": "Link3 Profile",
-        "url": "link3.to",
-        "maintainers": [
-          "cxheng315"
-        ],
-        "example": "/link3/profile/synfutures_defi",
-        "parameters": {
-          "handle": "Profile handle"
-        },
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "link3.to/:handle"
-            ],
-            "target": "/:handle"
-          }
-        ],
-        "location": "profile.ts"
-      }
-    },
-    "name": "Link3",
-    "url": "link3.to"
   },
   "linkedin": {
     "routes": {
@@ -56525,37 +56324,6 @@
         ],
         "location": "keyword.ts"
       },
-      "/product/:id": {
-        "path": "/product/:id",
-        "categories": [
-          "shopping"
-        ],
-        "example": "/smzdm/product/zm5vzpe",
-        "parameters": {
-          "id": "商品 id，网址上直接可以看到"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "wiki.smzdm.com/p/:id"
-            ],
-            "target": "/product/:id"
-          }
-        ],
-        "name": "商品",
-        "maintainers": [
-          "chesha1"
-        ],
-        "location": "product.ts"
-      },
       "/ranking/:rank_type/:rank_id/:hour": {
         "path": "/ranking/:rank_type/:rank_id/:hour",
         "categories": [
@@ -65929,41 +65697,6 @@
     "categories": [
       "blog"
     ]
-  },
-  "wchscu": {
-    "routes": {
-      "/recruit": {
-        "name": "招聘公告",
-        "path": "/recruit",
-        "example": "/wchscu/recruit",
-        "url": "www.wchscu.cn",
-        "maintainers": [
-          "ViggoC"
-        ],
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.wchscu.cn/public/notice/recruit"
-            ]
-          }
-        ],
-        "location": "recruit.ts"
-      }
-    },
-    "name": "华西医院",
-    "url": "www.wchscu.cn"
   },
   "wdc": {
     "routes": {
