@@ -5612,11 +5612,11 @@
   "/sse/inquire": [
     "Jeason0228"
   ],
+  "/sse/lawandrules/:slug?": [
+    "nczitzk"
+  ],
   "/sse/renewal": [
     "Jeason0228"
-  ],
-  "/sse/sselawsrules/:category{.+}?": [
-    "nczitzk"
   ],
   "/ssm/news": [
     "Fatpandac"
@@ -6967,8 +6967,7 @@
     "LightStrawberry"
   ],
   "/yystv/docs": [
-    "HaitianLiu",
-    "yy4382"
+    "HaitianLiu"
   ],
   "/zagg/new-arrivals/:query?": [
     "EthanWng97"
