@@ -319,9 +319,6 @@
   "/agora0/pen0": [
     "TonyRL"
   ],
-  "/agri/:category{.+}?": [
-    "nczitzk"
-  ],
   "/ahjzu/news": [
     "Yuk-0v0"
   ],
@@ -2195,15 +2192,6 @@
   "/gamersecret/:type?/:category?": [
     "nczitzk"
   ],
-  "/gamersky/ent/:category?": [
-    "LogicJake"
-  ],
-  "/gamersky/news/:type?": [
-    "yy4382"
-  ],
-  "/gamersky/review/:type?": [
-    "yy4382"
-  ],
   "/gamme/:domain/:category?": [],
   "/gamme/:domain/tag/:tag": [],
   "/gcores/category/:category": [
@@ -2405,9 +2393,6 @@
     "nczitzk"
   ],
   "/gov/cac/*": [],
-  "/gov/cbirc/:id?": [
-    "nczitzk"
-  ],
   "/gov/ccdi/*": [],
   "/gov/chinamine-safety/xw/:category{.+}?": [],
   "/gov/chinamine-safety/zfxxgk/:category{.+}?": [],
@@ -3041,9 +3026,6 @@
     "nczitzk"
   ],
   "/hupu/:category?": [
-    "nczitzk"
-  ],
-  "/hust/gs/:category{.+}?": [
     "nczitzk"
   ],
   "/hust/yjs": [
@@ -5504,9 +5486,6 @@
     "TonyRL"
   ],
   "/sinchew*": [],
-  "/sis001/author/:id?": [
-    "keocheung"
-  ],
   "/sis001/forum/:id?": [],
   "/sjtu/gs/:type/:num?": [
     "dzx-dzx"
@@ -5954,7 +5933,7 @@
   "/theatlantic/:category": [
     "EthanWng97"
   ],
-  "/theblockbeats/:channel?/:original?": [
+  "/theblockbeats/:channel?": [
     "Fatpandac",
     "jameshih"
   ],
