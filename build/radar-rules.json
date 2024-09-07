@@ -7083,6 +7083,19 @@
       }
     ]
   },
+  "niid.go.jp": {
+    "_name": "JapanGov",
+    "www": [
+      {
+        "title": "感染症発生動向調査週報ダウンロード",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/niid/ja/idwr-dl/:year"
+        ],
+        "target": "/goparams=>{const year=params.year;return`/niid/idwr-dl/${year?`/${year}`:\"\"}`}"
+      }
+    ]
+  },
   "gocn.vip": {
     "_name": "GoCN",
     ".": [
@@ -16893,6 +16906,16 @@
           "/announcement/:type"
         ],
         "target": "/sjtu/gs/:type"
+      }
+    ],
+    "www.seiee": [
+      {
+        "title": "电子信息与电气工程学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:path.html"
+        ],
+        "target": "/sjtu/seiee/:path"
       }
     ]
   },

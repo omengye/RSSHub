@@ -755,6 +755,9 @@
   "/bilibili/weekly/:disableEmbed?": [
     "ttttmr"
   ],
+  "/binance/announcement/:type": [
+    "enpitsulin"
+  ],
   "/binance/launchpool": [
     "zhenlohuang"
   ],
@@ -2333,6 +2336,9 @@
     "TonyRL"
   ],
   "/globallawreview/": [
+    "nczitzk"
+  ],
+  "/go/niid/idwr-dl/:year?": [
     "nczitzk"
   ],
   "/gocn/jobs": [
@@ -5513,6 +5519,9 @@
   ],
   "/sjtu/jwc/:type?": [
     "SeanChao"
+  ],
+  "/sjtu/seiee/:path/:catID?/:searchCatCode?": [
+    "dzx-dzx"
   ],
   "/sjtu/tongqu/:type?": [
     "SeanChao"
