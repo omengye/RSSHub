@@ -1471,6 +1471,14 @@
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
+          "/"
+        ],
+        "target": "/apnews/api/:tags?"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
           "/:rss"
         ],
         "target": "/apnews/rss/:rss"
@@ -3794,6 +3802,20 @@
           "/newsflash"
         ],
         "target": "/chaping/newsflash"
+      }
+    ]
+  },
+  "chikubi.jp": {
+    "_name": "乳首ふぇち",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/chikubi/:category"
       }
     ]
   },
@@ -6347,6 +6369,19 @@
           "/"
         ],
         "target": "/flyert/preferential"
+      }
+    ]
+  },
+  "follow.is": {
+    "_name": "Follow",
+    "app": [
+      {
+        "title": "User subscriptions",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/profile/:uid"
+        ],
+        "target": "/follow/follow/profile/:uid"
       }
     ]
   },
@@ -10813,6 +10848,19 @@
           "/blog/posts"
         ],
         "target": "/kadokawa/blog"
+      }
+    ]
+  },
+  "kakuyomu.jp": {
+    "_name": "カクヨム",
+    ".": [
+      {
+        "title": "投稿",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/works/:id"
+        ],
+        "target": "/kakuyomu/works/:id"
       }
     ]
   },
