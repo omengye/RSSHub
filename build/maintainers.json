@@ -949,6 +949,9 @@
   "/bulianglin/": [
     "cnkmmk"
   ],
+  "/bupt/jwc/:type": [
+    "Yoruet"
+  ],
   "/bupt/rczp": [
     "nczitzk"
   ],
@@ -1738,6 +1741,9 @@
   "/douban/event/hot/:locationId": [
     "xyqfer"
   ],
+  "/douban/movie/coming": [
+    "reonokiy"
+  ],
   "/douban/bookstore": [
     "xyqfer"
   ],
@@ -2466,6 +2472,10 @@
     "nczitzk"
   ],
   "/gov/cmse/*": [],
+  "/gov/cn/news/:uid": [
+    "EsuRt",
+    "howfool"
+  ],
   "/gov/cnnic/*": [],
   "/gov/csrc/auditstatus/:apply_id": [
     "hillerliao"
@@ -2577,9 +2587,6 @@
   "/gov/ndrc/xwdt/:category{.+}?": [],
   "/gov/nea/sjzz/ghs": [
     "nczitzk"
-  ],
-  "/gov/news/:uid": [
-    "EsuRt"
   ],
   "/gov/nifdc/:path{.+}?": [],
   "/gov/nmpa/*": [],
@@ -3855,6 +3862,9 @@
     "EthanWng97"
   ],
   "/mail/imap/:email/:folder{.+}?": [],
+  "/malaysiakini/:lang/:category?": [
+    "quiniapiezoelectricity"
+  ],
   "/mangadex/:id/:lang?": [
     "vzz64"
   ],
@@ -3919,6 +3929,9 @@
     "ImSingee"
   ],
   "/medsci/:sid?/:tid?": [
+    "nczitzk"
+  ],
+  "/meishichina/recipe/:category{.+}?": [
     "nczitzk"
   ],
   "/meituan/tech": [
@@ -4731,6 +4744,9 @@
     "Maecenas",
     "nczitzk"
   ],
+  "/pconline/focus/:category?": [
+    "CH563"
+  ],
   "/penguin-random-house/articles": [
     "StevenRCE0"
   ],
@@ -4808,6 +4824,9 @@
   ],
   "/pixiv/user/:id": [
     "DIYgod"
+  ],
+  "/pixivision/:lang/:category?": [
+    "SnowAgar25"
   ],
   "/piyao/jrpy": [
     "Fatpandac"
@@ -5633,6 +5652,9 @@
   "/soundofhope/:channel/:id": [
     "Fatpandac"
   ],
+  "/soundon/p/:id": [
+    "TonyRL"
+  ],
   "/sourceforge/:routeParams?": [
     "JimenezLi"
   ],
@@ -6130,12 +6152,15 @@
     "Fatpandac"
   ],
   "/tju/cic/:type?": [
+    "AlanZeng423",
     "SuperPung"
   ],
   "/tju/news/:type?": [
+    "AlanZeng423",
     "SuperPung"
   ],
   "/tju/oaa/:type?": [
+    "AlanZeng423",
     "AmosChenYQ",
     "SuperPung"
   ],
