@@ -1094,6 +1094,9 @@
   "/ccf/tfbd/:caty/:id": [
     "tudou027"
   ],
+  "/ccfa/:type?": [
+    "nczitzk"
+  ],
   "/ccnu/career": [
     "jackyu1996"
   ],
@@ -1600,6 +1603,9 @@
   ],
   "/devolverdigital/blog": [
     "XXY233"
+  ],
+  "/devtrium/": [
+    "Xy2002"
   ],
   "/dewu/declaration/:categoryId?": [
     "blade0910"
@@ -3762,6 +3768,9 @@
   ],
   "/lmu/jobs": [
     "StarDxxx"
+  ],
+  "/lofter/collection/:collectionID": [
+    "SrakhiuMeow"
   ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",
@@ -6033,6 +6042,9 @@
   "/thehindu/topic/:topic": [
     "TonyRL"
   ],
+  "/theinitium/app/:category?": [
+    "quiniapiezoelectricity"
+  ],
   "/theinitium/author/:type/:language?": [
     "AgFlore"
   ],
@@ -6689,6 +6701,9 @@
   ],
   "/wise/pair/:source/:target": [
     "HenryQW"
+  ],
+  "/withgoogle/explorables": [
+    "cesaryuan"
   ],
   "/wizfile/updates": [
     "Fatpandac"

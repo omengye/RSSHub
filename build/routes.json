@@ -11593,6 +11593,130 @@
     "name": "中国计算机学会",
     "url": "ccf.org.cn"
   },
+  "ccfa": {
+    "routes": {
+      "/:type?": {
+        "path": "/:type?",
+        "name": "分类",
+        "url": "www.ccfa.org.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/ccfa/1",
+        "parameters": {
+          "category": "分类，默认为 `1`，即协会动态，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [协会动态](https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)，网址为 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1`。截取 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=` 到末尾的部分 `1` 作为参数填入，此时路由为 [`/ccfa/1`](https://rsshub.app/ccfa/1)。\n  :::\n\n  | 分类                                                                      | ID                                     |\n  | ------------------------------------------------------------------------- | -------------------------------------- |\n  | [协会动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)       | [1](https://rsshub.app/ccfa/1)         |\n  | [行业动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=2)       | [2](https://rsshub.app/ccfa/2)         |\n  | [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)  | [33](https://rsshub.app/ccfa/33)       |\n  | [行业统计](http://www.ccfa.org.cn/portal/cn/lsbq.jsp?type=10003)          | [10003](https://rsshub.app/ccfa/10003) |\n  | [创新案例](http://www.ccfa.org.cn/portal/cn/hybzs_list.jsp?type=10004)    | [10004](https://rsshub.app/ccfa/10004) |\n  | [党建工作](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=7)       | [7](https://rsshub.app/ccfa/7)         |\n  | [新消费论坛](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=10005) | [10005](https://rsshub.app/ccfa/10005) |\n\n  #### [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)\n\n  | 分类                                                                            | ID                               |\n  | ------------------------------------------------------------------------------- | -------------------------------- |\n  | [行业报告](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)              | [33](https://rsshub.app/ccfa/33) |\n  | [行业标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=34)              | [34](https://rsshub.app/ccfa/34) |\n  | [行业政策](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=39)     | [39](https://rsshub.app/ccfa/39) |\n  | [政策权威解读](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40) | [40](https://rsshub.app/ccfa/40) |\n    ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ccfa.org.cn/portal/cn/xiehui_list.jsp",
+              "www.ccfa.org.cn/portal/cn/hybz_list.jsp",
+              "www.ccfa.org.cn/portal/cn/lsbq.jsp",
+              "www.ccfa.org.cn/portal/cn/hybzs_list.jsp",
+              "www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp"
+            ]
+          },
+          {
+            "title": "协会动态",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1"
+            ],
+            "target": "/1"
+          },
+          {
+            "title": "行业动态",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=2"
+            ],
+            "target": "/2"
+          },
+          {
+            "title": "政策/报告/标准",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33"
+            ],
+            "target": "/33"
+          },
+          {
+            "title": "行业统计",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/lsbq.jsp?type=10003"
+            ],
+            "target": "/10003"
+          },
+          {
+            "title": "创新案例",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/hybzs_list.jsp?type=10004"
+            ],
+            "target": "/10004"
+          },
+          {
+            "title": "党建工作",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=7"
+            ],
+            "target": "/7"
+          },
+          {
+            "title": "新消费论坛",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=10005"
+            ],
+            "target": "/10005"
+          },
+          {
+            "title": "政策/报告/标准 - 行业报告",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33"
+            ],
+            "target": "/33"
+          },
+          {
+            "title": "政策/报告/标准 - 行业标准",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=34"
+            ],
+            "target": "/34"
+          },
+          {
+            "title": "政策/报告/标准 - 行业政策",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=39"
+            ],
+            "target": "/39"
+          },
+          {
+            "title": "政策/报告/标准 - 政策权威解读",
+            "source": [
+              "www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40"
+            ],
+            "target": "/40"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "中国连锁经营协会",
+    "url": "ccfa.org.cn",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
+  },
   "ccnu": {
     "routes": {
       "/career": {
@@ -17024,6 +17148,41 @@
     },
     "name": "DevolverDigital",
     "url": "devolverdigital.com"
+  },
+  "devtrium": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "programming"
+        ],
+        "example": "/devtrium",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "devtrium.com"
+            ]
+          }
+        ],
+        "name": "Official Blogs",
+        "maintainers": [
+          "Xy2002"
+        ],
+        "url": "devtrium.com",
+        "location": "posts.ts"
+      }
+    },
+    "name": "Devtrium",
+    "url": "devtrium.com"
   },
   "dewu": {
     "routes": {
@@ -39216,6 +39375,29 @@
   },
   "lofter": {
     "routes": {
+      "/collection/:collectionID": {
+        "path": "/collection/:collectionID",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/lofter/collection/552041",
+        "parameters": {
+          "collectionID": "Lofter collection ID, can be found in the share URL"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Collection",
+        "maintainers": [
+          "SrakhiuMeow"
+        ],
+        "location": "collection.ts"
+      },
       "/tag/:name?/:type?": {
         "path": "/tag/:name?/:type?",
         "categories": [
@@ -57669,9 +57851,9 @@
         "categories": [
           "university"
         ],
-        "example": "/sdu/cs/0",
+        "example": "/sdu/cs/announcement",
         "parameters": {
-          "type": "默认为 `0`"
+          "type": "默认为 `announcement`"
         },
         "features": {
           "requireConfig": false,
@@ -57685,7 +57867,7 @@
         "maintainers": [
           "Ji4n1ng"
         ],
-        "description": "| 学院公告 | 学术报告 | 科技简讯 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |",
+        "description": "| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | \n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |",
         "location": "cs.ts"
       },
       "/epe/:type?": {
@@ -65559,6 +65741,37 @@
   },
   "theinitium": {
     "routes": {
+      "/app/:category?": {
+        "path": "/app/:category?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/theinitium/app",
+        "parameters": {
+          "category": "Category, see below, latest_sc by default"
+        },
+        "features": {
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "App",
+        "maintainers": [
+          "quiniapiezoelectricity"
+        ],
+        "radar": [
+          {
+            "source": [
+              "app.theinitium.com/t/latest/:category"
+            ],
+            "target": "/app/:category"
+          }
+        ],
+        "description": "抓取[The Initium App](https://app.theinitium.com/)的文章列表\n\n:::warning\n此路由暂不支持登陆认证\n:::\n\nCategory 栏目：\n\n| ----- | 简体中文     | 繁體中文      |\n| ----- | ----------------- | ---------------- |\n| 最新   | latest_sc | latest_tc |\n| 日报   | daily_brief_sc | daily_brief_tc |\n| 速递   | whats_new_sc | whats_new_tc |\n| 专题   | report_sc | report_tc |\n| 评论   | opinion_sc | opinion_tc |\n| 国际   | international_sc | international_tc |\n| 大陆   | mainland_sc | mainland_tc |\n| 香港   | hongkong_sc | hongkong_tc |\n| 台湾   | taiwan_sc | taiwan_tc |\n| 播客   | article_audio_sc | article_audio_tc |",
+        "location": "app.ts"
+      },
       "/author/:type/:language?": {
         "path": "/author/:type/:language?",
         "name": "作者",
@@ -72030,6 +72243,33 @@
     },
     "name": "Wise",
     "url": "wise.com"
+  },
+  "withgoogle": {
+    "routes": {
+      "/explorables": {
+        "name": "PAIR - AI Exploreables",
+        "url": "pair.withgoogle.com/explorables",
+        "path": "/explorables",
+        "maintainers": [
+          "cesaryuan"
+        ],
+        "example": "/withgoogle/explorables",
+        "categories": [
+          "blog"
+        ],
+        "radar": [
+          {
+            "source": [
+              "pair.withgoogle.com/explorables"
+            ],
+            "target": ""
+          }
+        ],
+        "location": "explorables.ts"
+      }
+    },
+    "name": "People + AI Research (PAIR)",
+    "url": "pair.withgoogle.com"
   },
   "wizfile": {
     "routes": {
