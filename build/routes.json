@@ -40275,6 +40275,43 @@
     "name": "The Korea Institute of Marine Law",
     "url": "kimlaw.or.kr"
   },
+  "kisskiss": {
+    "routes": {
+      "/blog/:category?": {
+        "path": "/blog/:category?",
+        "categories": [
+          "game"
+        ],
+        "example": "/blog/DLC",
+        "parameters": {
+          "category": "category"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.kisskiss.tv/kiss/diary.php"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "name": "ブログ",
+        "maintainers": [
+          "keocheung"
+        ],
+        "location": "blog.ts"
+      }
+    },
+    "name": "KISS",
+    "url": "www.kisskiss.tv"
+  },
   "konachan": {
     "routes": {
       "/post/popular_recent/:period?": {
@@ -45994,8 +46031,27 @@
         "example": "/mi/crowdfunding",
         "name": "小米众筹",
         "maintainers": [
-          "DIYgod"
+          "DIYgod",
+          "nuomi1"
         ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "m.mi.com/crowdfunding/home"
+            ],
+            "target": "/crowdfunding"
+          }
+        ],
+        "view": 5,
         "location": "crowdfunding.ts"
       },
       "/golden": {
@@ -59024,6 +59080,34 @@
     },
     "name": "ResearchGate",
     "url": "researchgate.net"
+  },
+  "resonac": {
+    "routes": {
+      "/products": {
+        "path": "/products",
+        "categories": [
+          "other"
+        ],
+        "example": "/resonac/products",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Products",
+        "maintainers": [
+          "valuex"
+        ],
+        "description": "",
+        "location": "products.ts"
+      }
+    },
+    "name": "Resonac",
+    "url": "www.resonac.com"
   },
   "reuters": {
     "routes": {
@@ -77251,6 +77335,35 @@
     },
     "name": "西安理工大学",
     "url": "index.xaut.edu.cn"
+  },
+  "xbookcn": {
+    "routes": {
+      "/:label?": {
+        "path": "/:label?",
+        "categories": [
+          "reading"
+        ],
+        "example": "/xbookcn/精选作品",
+        "parameters": {
+          "label": "按名称分类，详见https://blog.xbookcn.net/p/all.html"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "短篇",
+        "maintainers": [
+          "Lyunvy"
+        ],
+        "location": "blog.ts"
+      }
+    },
+    "name": "中文成人文學網",
+    "url": "www.xbookcn.net"
   },
   "xboxfan": {
     "routes": {

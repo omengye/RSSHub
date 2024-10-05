@@ -12870,6 +12870,19 @@
       }
     ]
   },
+  "kisskiss.tv": {
+    "_name": "KISS",
+    "www": [
+      {
+        "title": "ブログ",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/kiss/diary.php"
+        ],
+        "target": "/kisskiss/blog"
+      }
+    ]
+  },
   "konachan.com": {
     "_name": "Konachan.com Anime Wallpapers",
     ".": [
@@ -16304,6 +16317,19 @@
           "/"
         ],
         "target": "/meteor/boards"
+      }
+    ]
+  },
+  "mi.com": {
+    "_name": "小米",
+    "m": [
+      {
+        "title": "小米众筹",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/crowdfunding/home"
+        ],
+        "target": "/mi/crowdfunding"
       }
     ]
   },
