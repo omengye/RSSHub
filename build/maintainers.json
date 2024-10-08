@@ -1391,6 +1391,9 @@
     "Fatpandac"
   ],
   "/codeforces/recent-actions/:minrating?": [],
+  "/cohere/blog": [
+    "Loongphy"
+  ],
   "/coindesk/consensus-magazine": [
     "jameshih"
   ],
@@ -2375,6 +2378,9 @@
   ],
   "/github/activity/:user": [
     "hyoban"
+  ],
+  "/github/advisor/data/:type?/:category?": [
+    "sd0ric4"
   ],
   "/github/branches/:user/:repo": [
     "max-arnold"

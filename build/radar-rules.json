@@ -4557,6 +4557,19 @@
       }
     ]
   },
+  "cohere.com": {
+    "_name": "Cohere",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/cohere/blog"
+      }
+    ]
+  },
   "coindesk.com": {
     "_name": "CoinDesk Consensus Magazine",
     ".": [
@@ -7446,6 +7459,15 @@
           "/:user"
         ],
         "target": "/github/activity/:user"
+      },
+      {
+        "title": "Github Advisory Database RSS",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/advisories",
+          "/"
+        ],
+        "target": "/github/advisor/data/:type?/:category?"
       },
       {
         "title": "Repo Branches",
