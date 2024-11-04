@@ -1071,7 +1071,7 @@
     ]
   },
   "acs.org": {
-    "_name": "Unknown",
+    "_name": "ACS Publications",
     "pubs": [
       {
         "title": "Unknown",
@@ -2855,6 +2855,19 @@
           "/"
         ],
         "target": "/appleinsider/:category"
+      }
+    ]
+  },
+  "appstare.net": {
+    "_name": "AppStare",
+    ".": [
+      {
+        "title": "Comments",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/"
+        ],
+        "target": "/appstare/comments/:country/:appid"
       }
     ]
   },
@@ -5947,7 +5960,7 @@
     ]
   },
   "chlinlearn.top": {
-    "_name": "chlinlearn的技术博客",
+    "_name": "chlinlearn 的技术博客",
     "daily-blog": [
       {
         "title": "值得一读技术博客",
@@ -6455,6 +6468,107 @@
       }
     ]
   },
+  "cngold.org.cn": {
+    "_name": "中国黄金协会",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/cngoldparams=>{const category=params.category;return category?`/${category}`:\"\"}"
+      },
+      {
+        "title": "政策法规 - 法律法规",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/policies-245.html"
+        ],
+        "target": "/cngold/policies-245"
+      },
+      {
+        "title": "政策法规 - 产业政策",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/policies-262.html"
+        ],
+        "target": "/cngold/policies-262"
+      },
+      {
+        "title": "政策法规 - 黄金标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/policies-281.html"
+        ],
+        "target": "/cngold/policies-281"
+      },
+      {
+        "title": "行业培训 - 黄金投资分析师",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/training-242.html"
+        ],
+        "target": "/cngold/training-242"
+      },
+      {
+        "title": "行业培训 - 教育部1+X",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/training-246.html"
+        ],
+        "target": "/cngold/training-246"
+      },
+      {
+        "title": "行业培训 - 矿业权评估师",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/training-338.html"
+        ],
+        "target": "/cngold/training-338"
+      },
+      {
+        "title": "行业培训 - 其他培训",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/training-247.html"
+        ],
+        "target": "/cngold/training-247"
+      },
+      {
+        "title": "黄金科技 - 黄金协会科学技术奖",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/technology-318.html"
+        ],
+        "target": "/cngold/technology-318"
+      },
+      {
+        "title": "黄金科技 - 科学成果评价",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/technology-319.html"
+        ],
+        "target": "/cngold/technology-319"
+      },
+      {
+        "title": "黄金科技 - 新技术推广",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/technology-320.html"
+        ],
+        "target": "/cngold/technology-320"
+      },
+      {
+        "title": "黄金科技 - 黄金技术大会",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/technology-350.html"
+        ],
+        "target": "/cngold/technology-350"
+      }
+    ]
+  },
   "cnki.net": {
     "_name": "中国知网",
     "navi": [
@@ -6611,6 +6725,19 @@
           "/"
         ],
         "target": "/copernicium/:category"
+      }
+    ]
+  },
+  "counter-strike.net": {
+    "_name": "Counter Strike",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/:category"
+        ],
+        "target": "/counter-strike(params,url)=>{url=new URL(url);const category=params.category;const language=url.searchParams.get(\"l\");return`/news${category?`/${category}${language?`/${language}`:\"\"}`:\"\"}`}"
       }
     ]
   },
@@ -7302,6 +7429,27 @@
       }
     ]
   },
+  "igetget.com": {
+    "_name": "得到",
+    ".": [
+      {
+        "title": "得到文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/dedao/articles/:id"
+      },
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/dedao/list/:category?"
+      }
+    ]
+  },
   "dedao.cn": {
     "_name": "得到",
     ".": [
@@ -7314,19 +7462,6 @@
           "/"
         ],
         "target": "/dedao/knowledge/:topic?/:type?"
-      }
-    ]
-  },
-  "igetget.com": {
-    "_name": "得到",
-    ".": [
-      {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/"
-        ],
-        "target": "/dedao/list/:category?"
       }
     ]
   },
@@ -7470,6 +7605,20 @@
           "/news"
         ],
         "target": "/diandong/news/:cate"
+      }
+    ]
+  },
+  "dianping.com": {
+    "_name": "大众点评",
+    ".": [
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/member/:id",
+          "/userprofile/:id"
+        ],
+        "target": "/dianping/dianping/user/:id"
       }
     ]
   },
@@ -8240,6 +8389,19 @@
       }
     ]
   },
+  "enterprisecraftsmanship.com": {
+    "_name": "Enterprise Craftsmanship",
+    ".": [
+      {
+        "title": "Archives",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/archives/"
+        ],
+        "target": "/enterprisecraftsmanship/archives"
+      }
+    ]
+  },
   "epicgames.com": {
     "_name": "Epic Games Store",
     "store": [
@@ -8250,6 +8412,19 @@
           "/:locale/free-games"
         ],
         "target": "/epicgames/freegames/:locale"
+      }
+    ]
+  },
+  "eshukan.com": {
+    "_name": "万维书刊网",
+    "www": [
+      {
+        "title": "学术资讯",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/academic/index.aspx"
+        ],
+        "target": "/eshukan(_,url)=>{url=new URL(url);const id=url.searchParams.get(\"id\");return`/academic${id?`/${id}`:\"\"}`}"
       }
     ]
   },
@@ -8578,7 +8753,7 @@
     ]
   },
   "sdo.com": {
-    "_name": "FINAL FANTASY XIV 最终幻想 14",
+    "_name": "FINAL FANTASY XIV",
     "ff.web": [
       {
         "title": "最终幻想 14 国服",
@@ -14562,7 +14737,7 @@
     ]
   },
   "infzm.com": {
-    "_name": "infzm",
+    "_name": "南方周末",
     ".": [
       {
         "title": "热门文章",
@@ -15696,6 +15871,19 @@
       }
     ]
   },
+  "langchain.dev": {
+    "_name": "LangChain Blog",
+    "blog": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/langchain/blog"
+      }
+    ]
+  },
   "lanqiao.cn": {
     "_name": "蓝桥云课",
     ".": [
@@ -15959,7 +16147,7 @@
     ]
   },
   "linkedin.com": {
-    "_name": "LinkedIn 领英",
+    "_name": "LinkedIn",
     "www": [
       {
         "title": "Jobs",
@@ -16412,7 +16600,7 @@
     ]
   },
   "malaysiakini.com": {
-    "_name": "Malaysiakini 当今大马",
+    "_name": "Malaysiakini",
     ".": [
       {
         "title": "News",
@@ -19542,7 +19730,7 @@
     ]
   },
   "nationalgeographic.com": {
-    "_name": "国家地理",
+    "_name": "National Geographic",
     ".": [
       {
         "title": "Daily Photo",
@@ -19574,7 +19762,7 @@
     ]
   },
   "natgeomedia.com": {
-    "_name": "国家地理",
+    "_name": "National Geographic",
     ".": [
       {
         "title": "分类",
@@ -20454,6 +20642,19 @@
       }
     ]
   },
+  "nielsberglund.com": {
+    "_name": "Niels Berglund Blog",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/nielsberglund/blog"
+      }
+    ]
+  },
   "nikkei.com": {
     "_name": "The Nikkei 日本経済新聞",
     "www": [
@@ -21286,8 +21487,21 @@
       }
     ]
   },
+  "openai.com": {
+    "_name": "OpenAI",
+    "cookbook": [
+      {
+        "title": "Cookbook",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/openai/cookbook"
+      }
+    ]
+  },
   "openwrt.org": {
-    "_name": "Unknown",
+    "_name": "OpenWrt",
     ".": [
       {
         "title": "Unknown",
@@ -22652,6 +22866,35 @@
           "/"
         ],
         "target": "/qust/jw"
+      }
+    ]
+  },
+  "qztc.edu.cn": {
+    "_name": "泉州师范学院",
+    "www": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/qztc/home/:type"
+      },
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/jwc/:type/list.htm"
+        ],
+        "target": "/qztc/jwc/:type"
+      },
+      {
+        "title": "数学与计算机科学学院 软件学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/sjxy/:type/list.htm"
+        ],
+        "target": "/qztc/sjxy/:type"
       }
     ]
   },
@@ -26126,7 +26369,7 @@
     ]
   },
   "taiwannews.com.tw": {
-    "_name": "Taiwan News 台灣英文新聞",
+    "_name": "Taiwan News",
     ".": [
       {
         "title": "Hot News",
@@ -27220,7 +27463,7 @@
     ]
   },
   "uber.com": {
-    "_name": "Uber 优步",
+    "_name": "Uber",
     "www": [
       {
         "title": "Engineering",
@@ -27807,7 +28050,7 @@
     ]
   },
   "vom.mn": {
-    "_name": "Voice of Mongolia 蒙古之声",
+    "_name": "Voice of Mongolia",
     ".": [
       {
         "title": "News",
@@ -27989,6 +28232,19 @@
           "/"
         ],
         "target": "/warthunder/news"
+      }
+    ]
+  },
+  "washingtonpost.com": {
+    "_name": "The Washington Post",
+    "www": [
+      {
+        "title": "App",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/washingtonpost/app/:category"
       }
     ]
   },
